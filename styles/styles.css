@@ -54,17 +54,17 @@ textarea,
 button,
 body {
     font-family: var(--body-font);
-    font-size:var(--normal-font-size) ;
+    font-size: var(--normal-font-size);
 }
 
-body{
+body {
     background-color: var(--bg-100);
     overflow-x: hidden;
 }
 
 input,
 textarea,
-button{
+button {
     outline: none;
     border: none;
 }
@@ -73,17 +73,16 @@ ul {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
-
 
 /* =============== HEADER =============== */
 .header {
     max-width: 1440px;
 }
 /* =============== nav bar =============== */
-.nav{
+.nav {
     background: var(--bg-200);
     width: 100%;
     height: 60px;
@@ -104,7 +103,7 @@ a{
     height: 100%;
 }
 
-.nav__menu{
+.nav__menu {
     /* background: slateblue; */
     width: 30%;
     height: 90%;
@@ -113,11 +112,11 @@ a{
     align-items: center;
 }
 
-.nav__item{
+.nav__item {
     transition: 0.1s ease-in-out;
 }
 
-.nav__item:hover{
+.nav__item:hover {
     border-bottom: 3px solid var(--accent-100);
 }
 
@@ -125,14 +124,14 @@ a{
     color: var(--primary-100);
 }
 
-.nav__buttons{
+.nav__buttons {
     /* background: slateblue; */
     width: 25%;
     display: flex;
     justify-content: space-around;
 }
 
-.nav__button{
+.nav__button {
     padding: 5px 15px;
     border-radius: 5px;
     background-color: var(--accent-200);
@@ -151,10 +150,9 @@ a{
     font-size: var(--h3-font-size);
 }
 
-.nav__button--language:hover{
+.nav__button--language:hover {
     cursor: pointer;
 }
-
 
 /* ============ HEADER BANNER ================ */
 .header__container {
@@ -167,19 +165,19 @@ a{
 }
 
 /* ================= CTA ========================= */
-.cta{
+.cta {
     background: var(--bg-200);
     padding: 80px 0;
     width: 100vw;
     display: grid;
     row-gap: 90px;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "title title"
-    "steps figure";
+    grid-template-areas:
+        'title title'
+        'steps figure';
 }
 
-.cta__title{
+.cta__title {
     /* background: steelblue; */
     grid-area: title;
     /* margin-top: 80px; */
@@ -189,7 +187,7 @@ a{
     font-weight: var(--font-semi-bold);
 }
 
-.cta__stepsContainer{
+.cta__stepsContainer {
     /* background: slateblue; */
     grid-area: steps;
     display: flex;
@@ -198,28 +196,28 @@ a{
     gap: 40px;
 }
 
-.cta__subtitle{
+.cta__subtitle {
     color: var(--primary-200);
     font-size: var(--h1-font-size);
 }
 
-.cta__stepsList{
+.cta__stepsList {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.cta__step{
+.cta__step {
     font-size: var(--normal-font-size);
     color: var(--text-200);
 }
 
-.cta__step--number{
+.cta__step--number {
     font-size: var(--h2-font-size);
     color: var(--primary-300);
 }
 
-.cta__btnAgendar{
+.cta__btnAgendar {
     padding: 10px 25px;
     border-radius: 5px;
     background-color: var(--accent-200);
@@ -227,12 +225,12 @@ a{
     transition: 0.3s ease-in-out;
 }
 
-.cta__btnAgendar:hover{
+.cta__btnAgendar:hover {
     background: var(--accent-100);
     cursor: pointer;
 }
 
-.cta__figure{
+.cta__figure {
     /* background: crimson; */
     grid-area: figure;
     display: flex;
@@ -240,10 +238,9 @@ a{
     align-items: center;
 }
 
-.cta__img{
+.cta__img {
     width: 80%;
     height: 70%;
-    
 }
 
 /* ================ BENEFICIOS =================== */
@@ -251,9 +248,9 @@ a{
     /* padding: 20px 0; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "figure figure"
-    "container container";
+    grid-template-areas:
+        'figure figure'
+        'container container';
 }
 
 .beneficios__figure {
@@ -277,7 +274,7 @@ a{
     gap: 60px;
 }
 
-.beneficios__title{
+.beneficios__title {
     color: var(--primary-100);
     font-size: var(--h1-font-size);
 }
@@ -288,17 +285,18 @@ a{
     gap: 30px;
 }
 
-.beneficio__item{
+.beneficio__item {
     color: var(--text-200);
 }
 
-.beneficio__check{
+.beneficio__check {
     color: var(--primary-100);
     font-size: var(--h2-font-size);
 }
 
 /* ============ EDUCATION ==================== */
-.education{
+.education {
+    background: var(--bg-200);
     padding-top: 60px;
     display: flex;
     flex-direction: column;
@@ -306,7 +304,7 @@ a{
     align-items: center;
 }
 
-.education__subtitle{
+.education__subtitle {
     color: var(--primary-100);
     font-size: var(--h1-font-size);
     font-weight: var(--font-medium);
@@ -322,7 +320,170 @@ a{
     transition: 0.3s ease-in-out;
 }
 
-.education__btn:hover{
+.education__btn:hover {
     background: var(--accent-100);
     cursor: pointer;
+}
+
+/* ============ TESTIMONIAL ==================== */
+.comments {
+    max-width: 1440px;
+    height: 600px;
+    background-image: url('/assets/img/testimonials_bg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-top: 60px;
+}
+
+.comments__titles {
+    background: rgba(255, 255, 255, 0.408);
+    width: 100%;
+}
+
+.comments__subtitle {
+    color: var(--primary-100);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+}
+
+.comments__paragraph {
+    color: var(--primary-100);
+    font-size: var(--h1-font-size);
+    font-weight: var(--font-medium);
+    text-align: center;
+}
+
+.comments__container {
+    /* background: slateblue; */
+    width: 90%;
+    height: 330px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.comments__testimonial {
+    background: var(--bg-200);
+    border-radius: 5px;
+    padding: 10px;
+    width: 300px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.comments__img {
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 5px solid var(--accent-200);
+}
+
+.comments__name {
+    color: var(--primary-100);
+    font-size: var(--h3-font-size);
+}
+
+.comments__opinion {
+    color: var(--text-200);
+    text-align: center;
+}
+
+/* ============ FOOTER ==================== */
+
+.footer {
+    background: var(--primary-100);
+    max-width: 1440px;
+    padding: 80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.footer__social{
+    /* background: crimson; */
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.social__subtitle {
+    font-size: var(--h3-font-size);
+    color: var(--bg-100);
+}
+
+.social__container {
+    /* background: tomato; */
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    gap: 15px;
+}
+
+.social__link {
+    color: var(--accent-100);
+    font-size: var(--h2-font-size);
+    transition: 0.3s ease-in-out;
+}
+
+.social__link:hover{
+    color: var(--bg-100);
+    font-size: var(--h1-font-size);
+}
+
+.footer__logo {
+    background: var(--bg-200);
+    border-radius: 5px;
+    width: 250px;
+    height: 80px;
+    margin: 0 auto;
+}
+
+.footer__sections {
+    /* background: slateblue; */
+    padding: 40px 0;
+    border-top: 1px dotted var(--bg-100);
+    border-bottom: 1px dotted var(--bg-100);
+    width: 80%; 
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    row-gap: 15px;
+}
+
+.footer__item {
+    /* background: tomato; */
+    height: 25px;
+    transition: 0.3s ease-in-out;
+}
+
+.footer__item:hover {
+    border-bottom: 1px solid var(--bg-100);
+}
+
+.footer__link {
+    color: var(--bg-100);
+}
+
+.footer__info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer__rights,
+.footer__location {
+    color: var(--bg-100);
 }

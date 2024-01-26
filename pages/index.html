@@ -14,10 +14,17 @@
         <link
             href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
             rel="stylesheet" />
-        <!-- =============== CSS =============== -->
+        <!-- =============== CSS-INDEX =============== -->
         <link
             rel="stylesheet"
             href="/styles/styles.css" />
+
+        <!-- =============== CSS-INICIAR SESION =============== -->
+        <link rel="stylesheet" href="/styles/iniciarSesion.css">
+
+        <!-- =============== CSS-REGISTRARSE =============== -->
+        <link rel="stylesheet" href="/styles/registrarse.css">
+
         <title>ReciCash</title>
     </head>
     <body>
@@ -68,8 +75,8 @@
                 </ul>
 
                 <div class="nav__buttons">
-                    <button class="nav__button">Iniciar Sesión</button>
-                    <button class="nav__button">Regístrate</button>
+                    <a href="/pages/iniciarSesion.html" class="nav__button">Iniciar Sesión</a>
+                    <a href="/pages/registrarse.html" class="nav__button">Regístrate</a>
                     <button class="nav__button--language"><i class="ri-earth-line"></i></button>
                 </div>
             </nav>
@@ -134,11 +141,68 @@
 
         <!-- =============== SECTION - COMENTARIOS =============== -->
         <section class="comments">
-            <h2>Historias de Éxito</h2>
-            <p>Esto dicen las personas que usan ReciCash para reciclar.</p>
+
+            <div class="comments__titles">
+                <h2 class="comments__subtitle">Historias de Éxito</h2>
+                <p class="comments__paragraph">Esto dicen las personas que usan ReciCash para reciclar:</p>
+            </div>
+
+
+            <div class="comments__container">
+
+                <div class="comments__testimonial">
+                    <img src="/assets/img/testimonial_photo_2.jpg" alt="Profile photo" class="comments__img">
+                    <h3 class="comments__name">Javier Rodriguez</h3>
+                    <p class="comments__opinion">"La educación ambiental de ReciCash me ha enseñado mucho sobre el impacto del reciclaje. Ahora me siento más conectado con el medio ambiente y sé que cada pequeña acción cuenta."</p>
+                </div>
+
+                <div class="comments__testimonial">
+                    <img src="/assets/img/testimonial_photo_3.jpg" alt="Profile photo" class="comments__img">
+                    <h3 class="comments__name">Ana Maldonado</h3>
+                    <p class="comments__opinion">"Gracias a ReciCash, he alcanzado mis metas de reciclaje mucho más rápido de lo que pensé. La plataforma es intuitiva, y las notificaciones me mantienen al tanto de cada paso. ¡Increíble!"</p>
+                </div>
+                <div class="comments__testimonial">
+                    <img src="/assets/img/testimonial_photo_1.jpg" alt="Profile photo" class="comments__img">
+                    <h3 class="comments__name">María Gutierrez</h3>
+                    <p class="comments__opinion">"¡ReciCash ha cambiado por completo mi perspectiva sobre el reciclaje! Agendar citas es tan fácil, y las recompensas son un gran incentivo. Estoy emocionada de contribuir al medio ambiente y ganar al mismo tiempo."</p>
+                </div>
+            </div>
         </section>
 
         <!-- =============== FOOTER =============== -->
-        <footer class="footer"></footer>
+        <footer class="footer">
+            
+            <div class="footer__social">
+                <h3 class="social__subtitle">Síguenos en nuestras redes:</h3>
+
+                <ul class="social__container">
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-facebook-circle-line"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-twitter-x-line"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-instagram-line"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-linkedin-box-line"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-tiktok-fill"></i></a></li>
+                    <li class="social__item"><a href="#" class="social__link"><i class="ri-youtube-line"></i></a></li>
+                </ul>
+            </div>
+
+            <ul class="footer__sections">
+                <li class="footer__item"><a href="#" class="footer__link">Acerca de Nosotros</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Preguntas Frecuentes (FAQ)</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Términos y Condiciones</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Política de Privacidad</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Centro de Ayuda/Soporte</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Contacto</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Educación</a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Recompensas </a></li>
+                <li class="footer__item"><a href="#" class="footer__link">Política de Cookies</a></li>
+            </ul>
+
+            <div class="footer__info">
+                <p class="footer__rights">&copy; 2024 ReciCash. Todos los derechos reservados.</p>
+                <p class="footer__location">Medellín - Colombia</p>
+            </div>
+
+            <img src="/assets/img/LOGO-removebg.png" alt="ReciCash Logo" class="footer__logo">
+        </footer>
     </body>
 </html>
