@@ -24,45 +24,59 @@
             rel="stylesheet"
             href="/styles/iniciarSesion.css" />
 
-        <!-- =============== CSS-REGISTRARSE =============== -->
-        <link
-            rel="stylesheet"
-            href="/styles/registrarse.css" />
-
         <title>ReciCash</title>
     </head>
     <body class="body">
+        <!-- =============== LOADER =============== -->
+
+        <div
+            class="loader hideLoader"
+            id="loader">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
         <img
-            src="/assets/img/login.jpg"
+            src="/assets/img/login-1.jpg"
             alt="Reciclar"
             class="body__picture" />
 
         <div class="form">
-            <h2 class="form__title">Iniciar Sesión</h2>
+            <h2 class="form__title">Bienvenido</h2>
 
             <form class="form__container">
                 <div class="form__item">
+                    <input
+                        type="email"
+                        class="form__input"
+                        id="email"
+                        placeholder=" " />
                     <label
                         for="email"
                         class="form__label"
                         >Correo electronico</label
                     >
-                    <input
-                        type="email"
-                        class="form__input"
-                        id="email" />
                 </div>
 
                 <div class="form__item">
+                    <input
+                        type="password"
+                        class="form__input"
+                        id="password"
+                        placeholder=" " />
                     <label
                         for="password"
                         class="form__label"
                         >Contraseña</label
                     >
-                    <input
-                        type="password"
-                        class="form__input"
-                        id="password" />
                 </div>
 
                 <button
@@ -71,6 +85,25 @@
                     Iniciar Sesión
                 </button>
             </form>
+
+            <footer class="form__footer">
+                <a
+                    href="registrarse.html"
+                    class="form__footer--link"
+                    >¿Aún no tienes una cuenta ?. <span>Regístrate</span></a
+                >
+                <a
+                    href="/pages/index.html"
+                    class="form__footer--inicio"
+                    ><i class="ri-home-line"></i> Inicio</a
+                >
+                <img
+                    src="/assets/img/LOGO-removebg.png"
+                    alt="logo"
+                    class="form__footer--img" />
+            </footer>
+
+            <script src="/assets/JS/loader.js"></script>
         </div>
     </body>
 </html>

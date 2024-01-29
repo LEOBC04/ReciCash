@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <!-- =============== FAV ICON =============== -->
+        <link
+            rel="shortcut icon"
+            href="/assets/img/favicon.ico"
+            type="image/x-icon" />
+        <!-- =============== ICONS =============== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <!-- =============== CSS-INDEX =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/styles.css" />
+
+        <!-- =============== CSS-INICIAR SESION =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/iniciarSesion.css" />
+
+        <!-- =============== CSS-CONTACTO =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/contacto.css" />
+
+        <title>ReciCash</title>
+    </head>
+    <body>
+        <!-- =============== LOADER =============== -->
+
+        <div
+            class="loader hideLoader"
+            id="loader">
+            <div class="lds-roller">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+
+        <!-- =============== NAV - BAR =============== -->
+
+        <nav class="nav">
+            <div class="nav__logoContainer">
+                <a
+                    href="#"
+                    class="nav__logoLink">
+                    <img
+                        src="/assets/img/LOGO-removebg.png"
+                        alt="ReciCash Logo"
+                        class="nav__logo" />
+                </a>
+            </div>
+
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a
+                        href="/pages/index.html"
+                        class="nav__link"
+                        ><i class="ri-home-line"></i> Inicio</a
+                    >
+                </li>
+                <li class="nav__item">
+                    <a
+                        href="#"
+                        class="nav__link"
+                        ><i class="ri-book-open-line"></i> Educación</a
+                    >
+                </li>
+                <li class="nav__item">
+                    <a
+                        href="#"
+                        class="nav__link"
+                        ><i class="ri-team-line"></i> Nosotros</a
+                    >
+                </li>
+                <li class="nav__item">
+                    <a
+                        href="/pages/contacto.html"
+                        class="nav__link"
+                        ><i class="ri-message-3-line"></i> Contacto</a
+                    >
+                </li>
+            </ul>
+
+            <div class="nav__buttons">
+                <a
+                    href="/pages/iniciarSesion.html"
+                    class="nav__button"
+                    >Iniciar Sesión</a
+                >
+                <a
+                    href="/pages/registrarse.html"
+                    class="nav__button"
+                    >Regístrate</a
+                >
+                <button class="nav__button--language">
+                    <i class="ri-earth-line"></i>
+                </button>
+            </div>
+        </nav>
+
+        <!-- =============== CONTACT =============== -->
+        <section class="contact">
+            <img
+                src="/assets/img/contacto.jpg"
+                alt="Contacto"
+                class="contact__banner" />
+
+            <form class="contactForm">
+                <h2 class="contactForm__subtitle">Dejanos un mensaje</h2>
+
+                <div class="contactForm__item">
+                    <input
+                        type="text"
+                        class="contactForm__input"
+                        id="nombre"
+                        placeholder=" " />
+                    <label
+                        for="nombre"
+                        class="contactForm__label"
+                        >Nombre</label
+                    >
+                </div>
+
+                <div class="contactForm__item">
+                    <input
+                        type="email"
+                        class="contactForm__input"
+                        id="email"
+                        placeholder=" " />
+                    <label
+                        for="email"
+                        class="contactForm__label"
+                        >Correo electrónico</label
+                    >
+                </div>
+
+                <div class="contactForm__item">
+                  <input
+                      type="text"
+                      class="contactForm__input"
+                      id="nombre"
+                      placeholder=" " />
+                  <label
+                      for="nombre"
+                      class="contactForm__label"
+                      >Asunto</label
+                  >
+              </div>
+
+                <div class="contactForm__item">
+                    <textarea id="mensaje" class="contactForm__input contactForm__input--textArea" placeholder=" "></textarea>
+                    <label
+                        for="mensaje"
+                        class="contactForm__label"
+                        >Mensaje</label
+                    >
+                </div>
+
+                <button
+                    type="submit"
+                    class="contactForm__submit">
+                    Enviar
+                </button>
+            </form>
+        </section>
+
+        <!-- =============== FOOTER =============== -->
+        <footer class="footer">
+            <div class="footer__social">
+                <h3 class="social__subtitle">Síguenos en nuestras redes:</h3>
+
+                <ul class="social__container">
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-facebook-circle-line"></i
+                        ></a>
+                    </li>
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-twitter-x-line"></i
+                        ></a>
+                    </li>
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-instagram-line"></i
+                        ></a>
+                    </li>
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-linkedin-box-line"></i
+                        ></a>
+                    </li>
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-tiktok-fill"></i
+                        ></a>
+                    </li>
+                    <li class="social__item">
+                        <a
+                            href="#"
+                            class="social__link"
+                            ><i class="ri-youtube-line"></i
+                        ></a>
+                    </li>
+                </ul>
+            </div>
+
+            <ul class="footer__sections">
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Acerca de Nosotros</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Preguntas Frecuentes (FAQ)</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Términos y Condiciones</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Política de Privacidad</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Centro de Ayuda/Soporte</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Contacto</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Educación</a
+                    >
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Recompensas
+                    </a>
+                </li>
+                <li class="footer__item">
+                    <a
+                        href="#"
+                        class="footer__link"
+                        >Política de Cookies</a
+                    >
+                </li>
+            </ul>
+
+            <div class="footer__info">
+                <p class="footer__rights">
+                    &copy; 2024 ReciCash. Todos los derechos reservados.
+                </p>
+                <p class="footer__location">Medellín - Colombia</p>
+            </div>
+
+            <img
+                src="/assets/img/LOGO-removebg.png"
+                alt="ReciCash Logo"
+                class="footer__logo" />
+        </footer>
+
+        <script src="/assets/JS/loader.js"></script>
+    </body>
+</html>

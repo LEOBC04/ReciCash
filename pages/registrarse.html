@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <!-- =============== FAV ICON =============== -->
+        <link
+            rel="shortcut icon"
+            href="/assets/img/favicon.ico"
+            type="image/x-icon" />
+        <!-- =============== ICONS =============== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <!-- =============== CSS-INDEX =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/styles.css" />
+
+        <!-- =============== CSS- Registrarse =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/registrarse.css" />
+
+        <title>ReciCash</title>
+    </head>
+    <body class="body">
+
+         <!-- =============== LOADER =============== -->
+
+         <div
+         class="loader hideLoader"
+         id="loader">
+         <div class="lds-roller">
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+             <div></div>
+         </div>
+     </div>
+        <section class="signUp">
+            <img
+                src="/assets/img/signUp.jpg"
+                alt="Recicla"
+                class="signUp__img" />
+
+            <div class="signUp__form">
+                <form class="form">
+                    <h2 class="form__subtitle">Crea una cuenta</h2>
+
+                    <div class="form__item">
+                        <input
+                            type="text"
+                            class="form__input"
+                            id="nombres"
+                            placeholder=" " />
+                        <label
+                            for="nombres"
+                            class="form__label"
+                            >Nombres</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="text"
+                            class="form__input"
+                            id="apellidos"
+                            placeholder=" " />
+                        <label
+                            for="apellidos"
+                            class="form__label"
+                            >Apellidos</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="date"
+                            class="form__input"
+                            id="fechaNacimiento"
+                            placeholder=" " />
+                        <label
+                            for="fechaNacimiento"
+                            class="form__label--date"
+                            >Fecha de Nacimiento</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="number"
+                            class="form__input"
+                            id="documento"
+                            placeholder=" " />
+                        <label
+                            for="documento"
+                            class="form__label"
+                            >Documento</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="text"
+                            class="form__input"
+                            id="barrio"
+                            placeholder=" " />
+                        <label
+                            for="barrio"
+                            class="form__label"
+                            >Barrio</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="text"
+                            class="form__input"
+                            id="direccion"
+                            placeholder=" " />
+                        <label
+                            for="direccion"
+                            class="form__label"
+                            >Dirección</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="password"
+                            class="form__input"
+                            id="password"
+                            placeholder=" " />
+                        <label
+                            for="password"
+                            class="form__label"
+                            >Contraseña</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="password"
+                            class="form__input"
+                            id="confirmPassword"
+                            placeholder=" " />
+                        <label
+                            for="confirmPassword"
+                            class="form__label"
+                            >Confirmar contraseña</label
+                        >
+                    </div>
+
+                    <button
+                        class="form__submit"
+                        type="submit">
+                        Crear Cuenta
+                    </button>
+                </form>
+
+                <footer class="formFooter">
+                    <a
+                        href="/pages/iniciarSesion.html"
+                        class="formFooter__link"
+                        >¿ Ya tienes una cuenta ?.
+                        <span class="formFooter__span">Inicia Sesión.</span></a
+                    >
+
+                    <a href="/pages/index.html" class="formFooter__inicio"><i class="ri-home-line"></i> Inicio</a>
+                    <img
+                        src="/assets/img/LOGO-removebg.png"
+                        alt="ReciCash Logo"
+                        class="formFooter__img" />
+                </footer>
+            </div>
+        </section>
+
+        <script src="/assets/JS/loader.js"></script>
+    </body>
+</html>

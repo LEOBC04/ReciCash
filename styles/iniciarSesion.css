@@ -1,6 +1,6 @@
 .body {
-  background: var();
   max-width: 1440px;
+  max-height: 100vh;
   display: flex;
 }
 
@@ -13,14 +13,136 @@
 
 .form {
   /* background: steelblue; */
+  overflow-y: scroll;
+  padding-top: 50px;
   width: 50vw;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 60px;
+  gap: 60px;
 }
 
 .form__title {
   color: var(--primary-100);
   font-size: var(--h2-font-size);
+  text-align: center;
+}
+
+.form__container{
+  /* background-color: red; */
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.form__item{
+  /* background-color: crimson; */
+  position: relative;
+  height: 50px;
+}
+
+.form__label {
+  /* background-color: coral; */
+  position: absolute;
+  top: 11px;
+  left: 5px;
+  color: var(--text-200);
+  transition: 0.3s ease-out;
+  pointer-events: none;
+}
+
+
+.form__input  {
+  width: 100%;
+  border: 1px solid var(--bg-300);
+  padding: 10px 10px;
+  border-radius: 5px;
+  background: #edede9;
+  outline: none;
+}
+
+.form__input:focus {
+  border: 1px solid var(--bg-300);
+}
+
+
+
+.form__input:focus + .form__label,
+.form__input:not(:placeholder-shown) + .form__label {
+  transform: translateX(0px) translateY(-35px);
+  font-size: var(--small-font-size);
+}
+
+.form__submit{
+  background-color: var(--accent-200);
+  border-radius: 5px;
+  color: var(--primary-100);
+  padding: 10px 0;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+}
+
+.form__submit:hover {
+  background: var(--accent-100);
+  cursor: pointer;
+}
+
+.form__footer {
+  border-top: 1px solid var(--bg-300);
+  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.form__footer--link {
+  text-align: center;
+  color: var(--primary-100);
+}
+
+.form__footer--link span {
+  font-weight: var(--font-medium);
+  text-decoration: underline;
+}
+
+.form__footer--inicio {
+  font-size: var(--h3-font-size);
+  color: var(--primary-100);
+}
+
+.form__footer--inicio:hover{
+  color: var(--accent-200);
+  cursor: pointer;
+}
+
+.form__footer--img {
+  width: 90%;
+  height: 70px;
+}
+
+
+
+/* ============ RESPONSIVE ============= */
+
+@media (max-width: 768px ) {
+
+  .body{
+    display: flex;
+    align-items: center;
+  }
+
+  .body__picture{
+    display: none;
+    visibility: hidden;
+  }
+
+  .form{
+    width: 100%;
+  }
+
+
 }
