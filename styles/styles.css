@@ -4,6 +4,9 @@
 /* =============== VARIABLES CSS =============== */
 
 :root {
+    /* =============== Screen width =============== */
+    --max-width: 1440px;
+
     /* =============== Colores =============== */
     --primary-100: #082530;
     --primary-200: #334d59;
@@ -59,7 +62,19 @@ body {
 
 body {
     background-color: var(--bg-100);
+    min-height: 100vh;
     overflow-x: hidden;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: minmax(100%, 1000px);
+    grid-template-areas:
+        'nav'
+        'header'
+        'cta'
+        'beneficios'
+        'education'
+        'comments'
+        'footer';
 }
 
 input,
@@ -93,13 +108,13 @@ a {
     position: relative;
     width: 80px;
     height: 80px;
-  }
-  .lds-roller div {
+}
+.lds-roller div {
     animation: lds-roller 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
     transform-origin: 40px 40px;
-  }
-  .lds-roller div:after {
-    content: " ";
+}
+.lds-roller div:after {
+    content: ' ';
     display: block;
     position: absolute;
     width: 7px;
@@ -107,96 +122,98 @@ a {
     border-radius: 50%;
     background: var(--bg-100);
     margin: -4px 0 0 -4px;
-  }
-  .lds-roller div:nth-child(1) {
+}
+.lds-roller div:nth-child(1) {
     animation-delay: -0.036s;
-  }
-  .lds-roller div:nth-child(1):after {
+}
+.lds-roller div:nth-child(1):after {
     top: 63px;
     left: 63px;
-  }
-  .lds-roller div:nth-child(2) {
+}
+.lds-roller div:nth-child(2) {
     animation-delay: -0.072s;
-  }
-  .lds-roller div:nth-child(2):after {
+}
+.lds-roller div:nth-child(2):after {
     top: 68px;
     left: 56px;
-  }
-  .lds-roller div:nth-child(3) {
+}
+.lds-roller div:nth-child(3) {
     animation-delay: -0.108s;
-  }
-  .lds-roller div:nth-child(3):after {
+}
+.lds-roller div:nth-child(3):after {
     top: 71px;
     left: 48px;
-  }
-  .lds-roller div:nth-child(4) {
+}
+.lds-roller div:nth-child(4) {
     animation-delay: -0.144s;
-  }
-  .lds-roller div:nth-child(4):after {
+}
+.lds-roller div:nth-child(4):after {
     top: 72px;
     left: 40px;
-  }
-  .lds-roller div:nth-child(5) {
+}
+.lds-roller div:nth-child(5) {
     animation-delay: -0.18s;
-  }
-  .lds-roller div:nth-child(5):after {
+}
+.lds-roller div:nth-child(5):after {
     top: 71px;
     left: 32px;
-  }
-  .lds-roller div:nth-child(6) {
+}
+.lds-roller div:nth-child(6) {
     animation-delay: -0.216s;
-  }
-  .lds-roller div:nth-child(6):after {
+}
+.lds-roller div:nth-child(6):after {
     top: 68px;
     left: 24px;
-  }
-  .lds-roller div:nth-child(7) {
+}
+.lds-roller div:nth-child(7) {
     animation-delay: -0.252s;
-  }
-  .lds-roller div:nth-child(7):after {
+}
+.lds-roller div:nth-child(7):after {
     top: 63px;
     left: 17px;
-  }
-  .lds-roller div:nth-child(8) {
+}
+.lds-roller div:nth-child(8) {
     animation-delay: -0.288s;
-  }
-  .lds-roller div:nth-child(8):after {
+}
+.lds-roller div:nth-child(8):after {
     top: 56px;
     left: 12px;
-  }
+}
 
-  .hideLoader {
+.hideLoader {
     display: none;
-  }
+}
 
-  @keyframes lds-roller {
+@keyframes lds-roller {
     0% {
-      transform: rotate(0deg);
+        transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+        transform: rotate(360deg);
     }
-  }
-  
-
-/* =============== HEADER =============== */
-.header {
-    max-width: 1440px;
 }
+
 /* =============== nav bar =============== */
 .nav {
-    background: var(--bg-200);
+    grid-area: nav;
     width: 100%;
-    height: 60px;
+    background: var(--bg-200);
+    display: flex;
+    justify-content: center;
+}
+
+.nav__container {
+    max-width: var(--max-width);
+    width: 100%;
+    padding: 10px 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 .nav__logoContainer {
-    /* background-color: slateblue; */
-    width: 130px;
-    height: 60%;
+    width: 150px;
+    height: 50px;
     margin-left: 10px;
 }
 
@@ -206,7 +223,6 @@ a {
 }
 
 .nav__menu {
-    /* background: slateblue; */
     width: 30%;
     height: 90%;
     display: flex;
@@ -227,7 +243,6 @@ a {
 }
 
 .nav__buttons {
-    /* background: slateblue; */
     width: 25%;
     display: flex;
     justify-content: space-around;
@@ -255,10 +270,10 @@ a {
 .nav__button--language:hover {
     cursor: pointer;
 }
-
-/* ============ HEADER BANNER ================ */
-.header__container {
-    /* background: red; */
+/* =============== HEADER =============== */
+.header {
+    grid-area: header;
+    max-width: var(--max-width);
     width: 100%;
 }
 
@@ -268,9 +283,13 @@ a {
 
 /* ================= CTA ========================= */
 .cta {
+    grid-area: cta;
+    max-width: var(--max-width);
+    width: 100%;
     background: var(--bg-200);
+
+   
     padding: 80px 0;
-    width: 100vw;
     display: grid;
     row-gap: 90px;
     grid-template-columns: 1fr 1fr;
@@ -280,9 +299,7 @@ a {
 }
 
 .cta__title {
-    /* background: steelblue; */
     grid-area: title;
-    /* margin-top: 80px; */
     text-align: center;
     font-size: var(--biggest-font-size);
     color: var(--primary-100);
@@ -306,11 +323,14 @@ a {
 .cta__stepsList {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    align-items: flex-start;
+    /* background-color: crimson; */
+    padding-left: 80px;
+    gap: 20px;
 }
 
 .cta__step {
-    font-size: var(--normal-font-size);
+    font-size: var(--h2-font-size);
     color: var(--text-200);
 }
 
@@ -341,34 +361,40 @@ a {
 }
 
 .cta__img {
-    width: 80%;
-    height: 70%;
+    width: 100%;
+    height: 80%;
 }
 
 /* ================ BENEFICIOS =================== */
 .beneficios {
-    /* padding: 20px 0; */
+    grid-area: beneficios;
+    max-width: var(--max-width);
+    width: 100%;
+    background: var(--accent-100);
+
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     grid-template-areas:
-        'figure figure'
-        'container container';
+        'figure container'
+        ;
 }
 
+
 .beneficios__figure {
-    /* background: slateblue; */
+    grid-area: figure;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .beneficios__img {
-    width: 80%;
+    width: 100%;
 }
 
 .beneficios__container {
-    background-color: var(--accent-100);
-    /* padding-top: 20px; */
+    grid-area: container;
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,17 +404,21 @@ a {
 
 .beneficios__title {
     color: var(--primary-100);
-    font-size: var(--h1-font-size);
+    font-size: var(--biggest-font-size);
+    text-align: center;
 }
 
 .beneficios__list {
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 30px;
 }
 
 .beneficio__item {
     color: var(--text-200);
+    font-size: var(--h2-font-size);
+    text-align: center;
 }
 
 .beneficio__check {
@@ -398,11 +428,17 @@ a {
 
 /* ============ EDUCATION ==================== */
 .education {
-    background: var(--bg-200);
-    padding-top: 60px;
+    grid-area: education;
+    max-width: var(--max-width);
+    width: 100%;
+    display: flex;
+}
+
+.education__content {
+    width: 50%;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
+    justify-content: center;
     align-items: center;
 }
 
@@ -415,7 +451,7 @@ a {
 
 .education__btn {
     margin-top: 60px;
-    padding: 10px 25px;
+    padding: 15px 25px;
     border-radius: 5px;
     background-color: var(--accent-200);
     color: var(--primary-100);
@@ -427,11 +463,17 @@ a {
     cursor: pointer;
 }
 
-/* ============ TESTIMONIAL ==================== */
+.education__img {
+    width: 45%;
+    margin: 0 auto;
+}
+
+/* ============ COMMENTS ==================== */
 .comments {
-    max-width: 1440px;
-    height: 600px;
-    background-image: url('/assets/img/testimonials_bg.jpg');
+    grid-area: comments;
+    max-width: var(--max-width);
+    width: 100%;
+    background-image: url("/assets/img/comments.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -439,7 +481,7 @@ a {
     flex-direction: column;
     align-items: center;
     gap: 60px;
-    padding-top: 60px;
+    padding: 60px 0;
 }
 
 .comments__titles {
@@ -467,6 +509,7 @@ a {
     height: 330px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .comments__testimonial {
@@ -498,11 +541,20 @@ a {
     color: var(--text-200);
     text-align: center;
 }
-
 /* ============ FOOTER ==================== */
 
 .footer {
+    grid-area: footer;
+    width: 100%;
     background: var(--primary-100);
+    display: flex;
+    justify-content: center;
+}
+
+.footer__container{
+    max-width: var(--max-width);
+    width: 100%;
+
     max-width: 1440px;
     padding: 80px 0;
     display: flex;
@@ -588,4 +640,51 @@ a {
 .footer__rights,
 .footer__location {
     color: var(--bg-100);
+}
+
+/* ============ Responsive ==================== */
+@media (max-width: 1200px) {
+
+/* ============ SECTION CTA ==================== */
+
+    .cta {
+        grid-template-areas: 
+        "title"
+        "steps";
+        grid-template-columns: 1fr;
+    }
+    .cta__figure,
+    .cta__img {
+        display: none;
+        visibility: hidden;
+    }
+
+    .cta__title{
+        font-size: var(--h1-font-size);
+    }
+
+/* ============ SECTION BENEFICIOS ==================== */
+    .beneficios {
+        grid-template-areas: 
+        "container";
+        padding: 40px 0;
+    }
+
+    .beneficios__figure,
+    .beneficios__img {
+        display: none;
+        visibility: hidden;
+    }
+
+/* ============ SECTION EDUCATION ==================== */
+.education{
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 60px 0;
+}
+
+.education__content {
+    width: 80%;
+}
+
 }

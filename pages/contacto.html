@@ -19,11 +19,6 @@
             rel="stylesheet"
             href="/styles/styles.css" />
 
-        <!-- =============== CSS-INICIAR SESION =============== -->
-        <link
-            rel="stylesheet"
-            href="/styles/iniciarSesion.css" />
-
         <!-- =============== CSS-CONTACTO =============== -->
         <link
             rel="stylesheet"
@@ -50,73 +45,70 @@
         </div>
 
         <!-- =============== NAV - BAR =============== -->
-
         <nav class="nav">
-            <div class="nav__logoContainer">
-                <a
-                    href="#"
-                    class="nav__logoLink">
-                    <img
-                        src="/assets/img/LOGO-removebg.png"
-                        alt="ReciCash Logo"
-                        class="nav__logo" />
-                </a>
-            </div>
-
-            <ul class="nav__menu">
-                <li class="nav__item">
-                    <a
-                        href="/pages/index.html"
-                        class="nav__link"
-                        ><i class="ri-home-line"></i> Inicio</a
-                    >
-                </li>
-                <li class="nav__item">
+            <div class="nav__container">
+                <div class="nav__logoContainer">
                     <a
                         href="#"
-                        class="nav__link"
-                        ><i class="ri-book-open-line"></i> Educación</a
-                    >
-                </li>
-                <li class="nav__item">
-                    <a
-                        href="#"
-                        class="nav__link"
-                        ><i class="ri-team-line"></i> Nosotros</a
-                    >
-                </li>
-                <li class="nav__item">
-                    <a
-                        href="/pages/contacto.html"
-                        class="nav__link"
-                        ><i class="ri-message-3-line"></i> Contacto</a
-                    >
-                </li>
-            </ul>
+                        class="nav__logoLink">
+                        <img
+                            src="/assets/img/LOGO-removebg.png"
+                            alt="ReciCash Logo"
+                            class="nav__logo" />
+                    </a>
+                </div>
 
-            <div class="nav__buttons">
-                <a
-                    href="/pages/iniciarSesion.html"
-                    class="nav__button"
-                    >Iniciar Sesión</a
-                >
-                <a
-                    href="/pages/registrarse.html"
-                    class="nav__button"
-                    >Regístrate</a
-                >
-                <button class="nav__button--language">
-                    <i class="ri-earth-line"></i>
-                </button>
+                <ul class="nav__menu">
+                    <li class="nav__item">
+                        <a
+                            href="#"
+                            class="nav__link"
+                            ><i class="ri-home-line"></i> Inicio</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="#"
+                            class="nav__link"
+                            ><i class="ri-book-open-line"></i> Educación</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="/pages/nosotros.html"
+                            class="nav__link"
+                            ><i class="ri-team-line"></i> Nosotros</a
+                        >
+                    </li>
+                    <li class="nav__item">
+                        <a
+                            href="/pages/contacto.html"
+                            class="nav__link"
+                            ><i class="ri-message-3-line"></i> Contacto</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="nav__buttons">
+                    <a
+                        href="/pages/iniciarSesion.html"
+                        class="nav__button"
+                        >Iniciar Sesión</a
+                    >
+                    <a
+                        href="/pages/registrarse.html"
+                        class="nav__button"
+                        >Regístrate</a
+                    >
+                    <button class="nav__button--language">
+                        <i class="ri-earth-line"></i>
+                    </button>
+                </div>
             </div>
         </nav>
 
         <!-- =============== CONTACT =============== -->
         <section class="contact">
-            <img
-                src="/assets/img/contacto.jpg"
-                alt="Contacto"
-                class="contact__banner" />
 
             <form class="contactForm">
                 <h2 class="contactForm__subtitle">Dejanos un mensaje</h2>
@@ -148,20 +140,23 @@
                 </div>
 
                 <div class="contactForm__item">
-                  <input
-                      type="text"
-                      class="contactForm__input"
-                      id="nombre"
-                      placeholder=" " />
-                  <label
-                      for="nombre"
-                      class="contactForm__label"
-                      >Asunto</label
-                  >
-              </div>
+                    <input
+                        type="text"
+                        class="contactForm__input"
+                        id="nombre"
+                        placeholder=" " />
+                    <label
+                        for="nombre"
+                        class="contactForm__label"
+                        >Asunto</label
+                    >
+                </div>
 
                 <div class="contactForm__item">
-                    <textarea id="mensaje" class="contactForm__input contactForm__input--textArea" placeholder=" "></textarea>
+                    <textarea
+                        id="mensaje"
+                        class="contactForm__input contactForm__input--textArea"
+                        placeholder=" "></textarea>
                     <label
                         for="mensaje"
                         class="contactForm__label"
@@ -179,9 +174,10 @@
 
         <!-- =============== FOOTER =============== -->
         <footer class="footer">
-            <div class="footer__social">
+            <div class="footer__container">
+              <div class="footer__social">
                 <h3 class="social__subtitle">Síguenos en nuestras redes:</h3>
-
+  
                 <ul class="social__container">
                     <li class="social__item">
                         <a
@@ -227,7 +223,7 @@
                     </li>
                 </ul>
             </div>
-
+  
             <ul class="footer__sections">
                 <li class="footer__item">
                     <a
@@ -293,20 +289,22 @@
                     >
                 </li>
             </ul>
-
+  
             <div class="footer__info">
                 <p class="footer__rights">
                     &copy; 2024 ReciCash. Todos los derechos reservados.
                 </p>
                 <p class="footer__location">Medellín - Colombia</p>
             </div>
-
+  
             <img
                 src="/assets/img/LOGO-removebg.png"
                 alt="ReciCash Logo"
                 class="footer__logo" />
-        </footer>
+            </div>
+          </footer>
 
+        <!-- =============== SCRIPTS =============== -->
         <script src="/assets/JS/loader.js"></script>
     </body>
 </html>

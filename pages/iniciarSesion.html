@@ -43,67 +43,73 @@
                 <div></div>
             </div>
         </div>
+        <!-- =============== LOG IN =============== -->
 
-        <img
-            src="/assets/img/login-1.jpg"
-            alt="Reciclar"
-            class="body__picture" />
+        <div class="logIn__container">
+            <img
+                src="/assets/img/login-1.jpg"
+                alt="Reciclar"
+                class="body__picture" />
 
-        <div class="form">
-            <h2 class="form__title">Bienvenido</h2>
+            <div class="form">
+                <h2 class="form__title">Bienvenido</h2>
 
-            <form class="form__container">
-                <div class="form__item">
-                    <input
-                        type="email"
-                        class="form__input"
-                        id="email"
-                        placeholder=" " />
-                    <label
-                        for="email"
-                        class="form__label"
-                        >Correo electronico</label
+                <form class="form__container" id="loginForm">
+                    <div class="form__item">
+                        <input
+                            type="email"
+                            class="form__input"
+                            id="email"
+                            placeholder=" " />
+                        <label
+                            for="email"
+                            class="form__label"
+                            >Correo electronico</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
+                            type="password"
+                            class="form__input"
+                            id="contraseña"
+                            placeholder=" " />
+                        <label
+                            for="contraseña"
+                            class="form__label"
+                            >Contraseña</label
+                        >
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="form__submit">
+                        Iniciar Sesión
+                    </button>
+                </form>
+
+                <footer class="form__footer">
+                    <a
+                        href="registrarse.html"
+                        class="form__footer--link"
+                        >¿Aún no tienes una cuenta ?. <span>Regístrate</span></a
                     >
-                </div>
-
-                <div class="form__item">
-                    <input
-                        type="password"
-                        class="form__input"
-                        id="password"
-                        placeholder=" " />
-                    <label
-                        for="password"
-                        class="form__label"
-                        >Contraseña</label
+                    <a
+                        href="/pages/index.html"
+                        class="form__footer--inicio"
+                        ><i class="ri-home-line"></i> Inicio</a
                     >
-                </div>
-
-                <button
-                    type="submit"
-                    class="form__submit">
-                    Iniciar Sesión
-                </button>
-            </form>
-
-            <footer class="form__footer">
-                <a
-                    href="registrarse.html"
-                    class="form__footer--link"
-                    >¿Aún no tienes una cuenta ?. <span>Regístrate</span></a
-                >
-                <a
-                    href="/pages/index.html"
-                    class="form__footer--inicio"
-                    ><i class="ri-home-line"></i> Inicio</a
-                >
-                <img
-                    src="/assets/img/LOGO-removebg.png"
-                    alt="logo"
-                    class="form__footer--img" />
-            </footer>
-
-            <script src="/assets/JS/loader.js"></script>
+                    <img
+                        src="/assets/img/LOGO-removebg.png"
+                        alt="logo"
+                        class="form__footer--img" />
+                </footer>
+            </div>
         </div>
+
+        <!-- =============== SCRIPTS =============== -->
+
+        <script src="/assets/JS/loader.js"></script>
+        <script src="/assets/JS/iniciarSesion.js"></script>
     </body>
 </html>

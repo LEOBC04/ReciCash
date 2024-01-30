@@ -6,7 +6,7 @@ window.addEventListener('DOMContentLoaded', () => {
     loader.classList.remove('hideLoader')
 })
 
-// Se ejctua cuando carga la p+agina
+// Se ejctua cuando carga la pagina
 window.addEventListener('load', () => {
     setTimeout(() => {
         loader.classList.add('hideLoader')
