@@ -19,19 +19,14 @@
             rel="stylesheet"
             href="/styles/styles.css" />
 
-        <!-- =============== CSS-INICIAR SESION =============== -->
-        <link
-            rel="stylesheet"
-            href="/styles/iniciarSesion.css" />
+        <!-- =============== CSS-NOSOTROS =============== -->
 
-        <!-- =============== CSS-CONTACTO =============== -->
-        <link
-            rel="stylesheet"
-            href="/styles/contacto.css" />
+        <link rel="stylesheet" href="/styles/nosotros.css">
+        
 
         <title>ReciCash</title>
     </head>
-    <body>
+    <body class="container">
         <!-- =============== LOADER =============== -->
 
         <div
@@ -55,7 +50,7 @@
             <div class="nav__container">
                 <div class="nav__logoContainer">
                     <a
-                        href="#"
+                        href="/pages/index.html"
                         class="nav__logoLink">
                         <img
                             src="/assets/img/LOGO-removebg.png"
@@ -67,7 +62,7 @@
                 <ul class="nav__menu">
                     <li class="nav__item">
                         <a
-                            href="#"
+                            href="/pages/index.html"
                             class="nav__link"
                             ><i class="ri-home-line"></i> Inicio</a
                         >
@@ -114,72 +109,71 @@
         </nav>
 
         <!-- Sección "Nosotros" -->
-        <section id="nosotros">
-            <header>
-                <h1>Conócenos</h1>
-                <p>
+        <section class="nosotros" id="nosotros">
+            <header class="nosotros__header">
+                <h1 class="nosotros__title">Conócenos</h1>
+                <p class="nosotros__subtitle">
                     Descubre la historia, misión y valores detrás de ReciCash.
                 </p>
             </header>
 
             <div class="historia">
-                <h2>Nuestra Historia</h2>
-                <p>
+                <h2 class="historia__title">Nuestra Historia</h2>
+                <p class="historia__paragraph">
                     ReciCash nació de la visión de un grupo apasionado por el
                     medio ambiente. Con el objetivo de hacer que el reciclaje
                     sea más accesible y gratificante, creamos esta plataforma
                     para conectar a la comunidad con el poder de contribuir al
                     planeta.
                 </p>
+                <img src="/assets/img/historia.jpg" alt="Historia" class="historia__img">
             </div>
 
-            <div class="mision-vision">
-                <h2>Misión y Visión</h2>
-                <p>
-                    <strong>Misión:</strong> Facilitar y recompensar la
-                    contribución al reciclaje, promoviendo la sostenibilidad y
-                    la conciencia ambiental.
-                </p>
-                <p>
-                    <strong>Visión:</strong> Ser la plataforma líder que inspire
-                    y empodere a las comunidades para lograr un mundo más limpio
-                    y sostenible.
-                </p>
+            <div class="mision">
+                <h2 class="mision__title">Misión y Visión</h2>
+
+                <div class="mision__paragraph">
+                    <p class="mision__text">
+                        <strong>Misión:</strong> Facilitar y recompensar la
+                        contribución al reciclaje, promoviendo la sostenibilidad y
+                        la conciencia ambiental.
+                    </p>
+                    <p class="mision__text">
+                        <strong>Visión:</strong> Ser la plataforma líder que inspire
+                        y empodere a las comunidades para lograr un mundo más limpio
+                        y sostenible.
+                    </p>
+                </div>
+                
+                <img src="/assets/img/mision.jpg" alt="Mision" class="mision__img">
             </div>
 
             <div class="valores">
-                <h2>Valores Fundamentales</h2>
-                <ul>
-                    <li>
+                <h2 class="valores__title">Valores Fundamentales</h2>
+                <ul class="valores__container">
+                    <li class="valores__item">
                         <strong>Sostenibilidad:</strong> Nos comprometemos a
                         liderar con prácticas y decisiones que promuevan la
                         sostenibilidad.
                     </li>
-                    <li>
+                    <li class="valores__item">
                         <strong>Transparencia:</strong> Operamos con total
                         transparencia para construir la confianza de nuestra
                         comunidad.
                     </li>
-                    <li>
+                    <li class="valores__item">
                         <strong>Comunidad:</strong> Valoramos la fuerza de la
                         comunidad y fomentamos la colaboración y el apoyo mutuo.
                     </li>
                 </ul>
+
+                <img src="/assets/img/valores.png" alt="Valores" class="valores__img">
             </div>
 
-            <div class="equipo">
-                <h2>Nuestro Equipo</h2>
-                <p>
-                    Conoce al equipo apasionado que hace posible ReciCash. Cada
-                    miembro aporta su experiencia única para llevar adelante
-                    nuestra misión.
-                </p>
-                <!-- Lista de miembros del equipo con fotos y perfiles -->
-            </div>
 
-            <div class="compromiso-ambiental">
-                <h2>Compromiso Ambiental</h2>
-                <p>
+            <div class="compromiso">
+                <h2 class="compromiso__title">Compromiso Ambiental</h2>
+                <p class="compromiso__paragraph">
                     En ReciCash, estamos comprometidos con la protección del
                     medio ambiente. Hemos implementado prácticas sostenibles en
                     todos los aspectos de nuestro funcionamiento.

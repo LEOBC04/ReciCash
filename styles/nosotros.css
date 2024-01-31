@@ -1,0 +1,215 @@
+/* ================== HEADER =================== */
+
+.nosotros{
+  background: var(--bg-200);
+  max-width: var(--max-width);
+  width: 100%;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+}
+
+.nosotros__header {
+  /* background: steelblue; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  border-bottom: 2px solid var(--bg-300);
+}
+
+.nosotros__title{
+  color: var(--primary-100);
+  font-size: var(--biggest-font-size);
+}
+
+.nosotros__subtitle {
+  color: var(--primary-100);
+  font-size: var(--bigger-font-size);
+  text-align: center;
+}
+
+/* ================== HISTORIA =================== */
+.historia {
+  /* background: slateblue; */
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas: 
+  "title title"
+  "paragraph img";
+  border-bottom: 2px solid var(--bg-300);
+}
+
+.historia__title{
+  /* background: crimson; */
+  grid-area: title;
+  text-align: center;
+  font-size: var(--bigger-font-size);
+  color: var(--primary-100);
+}
+
+.historia__paragraph {
+  /* background: tomato; */
+  width: 90%;
+  grid-area: paragraph;
+  color: var(--text-100);
+  font-size: var(--h3-font-size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+} 
+
+.historia__img{
+  /* background: greenyellow; */
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  object-fit: co;
+  padding: 30px;
+}
+
+/* ================== MISION VISION =================== */
+.mision {
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas: 
+  "title title"
+  "img paragraph";
+  border-bottom: 2px solid var(--bg-300);
+}
+
+.mision__title {
+  grid-area: title;
+  text-align: center;
+  font-size: var(--bigger-font-size);
+  color: var(--primary-100);
+}
+
+.mision__paragraph {
+  /* background: slateblue; */
+  width: 90%;
+  margin: 0 auto;
+  grid-area: paragraph;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.mision__text {
+  color: var(--text-100);
+  font-size: var(--h3-font-size);
+  text-align: center;
+}
+
+.mision__img  {
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  object-fit: cover;
+}
+
+/* ================== VALORES =================== */
+.valores {
+  min-height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.5fr 3fr;
+  grid-template-areas: 
+  "title title"
+  "paragraph img";
+  border-bottom: 2px solid var(--bg-300);
+}
+
+.valores__title {
+  grid-area: title;
+  text-align: center;
+  font-size: var(--bigger-font-size);
+  color: var(--primary-100);
+}
+
+.valores__container {
+  /* background: crimson; */
+  width: 90%;
+  margin: 0 auto;
+  grid-area: paragraph;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.valores__item {
+  color: var(--text-100);
+  font-size: var(--h3-font-size);
+  /* text-align: center; */
+}
+
+.valores__img {
+  /* background: slateblue; */
+  grid-area: img;
+  width: 100%;
+  height: 100%;
+  padding: 35px;
+  object-fit: cover;
+}
+
+/* ================== COMPROMISO AMBIENTAL =================== */
+.compromiso {
+  /* background-color: slateblue; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding-bottom: 200px;
+}
+
+.compromiso__title{
+  font-size: var(--bigger-font-size);
+  color: var(--primary-100);
+}
+
+.compromiso__paragraph {
+  color: var(--text-100);
+  font-size: var(--h3-font-size);
+  text-align: center;
+}
+
+/* ================== RESPONSIVE =================== */
+
+@media (max-width: 992px) {
+  .historia,
+  .mision,
+  .valores {
+    /* min-height: 500px; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 2fr 1fr;
+    grid-template-areas: 
+    "title"
+    "img"
+    "paragraph";
+  }
+
+  .historia__paragraph{
+    margin: 0 auto;
+  }
+
+  .valores__container{
+    padding: 30px;
+  }
+
+  .valores__img {
+    max-height: 100%;
+    object-fit: contain;
+  }
+}
