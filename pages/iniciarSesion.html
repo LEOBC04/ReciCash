@@ -54,15 +54,17 @@
             <div class="form">
                 <h2 class="form__title">Bienvenido</h2>
 
-                <form class="form__container" id="loginForm">
+                <form
+                    class="form__container"
+                    id="loginForm">
                     <div class="form__item">
                         <input
                             type="email"
                             class="form__input"
-                            id="email"
+                            id="correo"
                             placeholder=" " />
                         <label
-                            for="email"
+                            for="correo"
                             class="form__label"
                             >Correo electronico</label
                         >
@@ -83,9 +85,19 @@
 
                     <button
                         type="submit"
-                        class="form__submit">
+                        class="form__submit form__submit--disabled"
+                        id="loginSubmit"
+                        disabled>
                         Iniciar Sesión
                     </button>
+
+                    <div
+                        class="spinner spinner__disabled"
+                        id="logInSpinner">
+                        <div class="bounce1"></div>
+                        <div class="bounce2"></div>
+                        <div class="bounce3"></div>
+                    </div>
                 </form>
 
                 <footer class="form__footer">

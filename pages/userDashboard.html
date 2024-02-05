@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+        <!-- =============== VALIDADOR DE RUTAS =============== -->
+
+        <script src="/assets/JS/hooks/bootstrapSession.js"></script>    
+        <!-- =============== FAV ICON =============== -->
+        <link
+            rel="shortcut icon"
+            href="/assets/img/favicon.ico"
+            type="image/x-icon" />
+        <!-- =============== ICONS =============== -->
+        <link
+            href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+            rel="stylesheet" />
+        <!-- =============== CSS-INDEX =============== -->
+        <link
+            rel="stylesheet"
+            href="/styles/styles.css" />
+
+        <!-- =============== CSS- USER DASHBOARD =============== -->
+        <link rel="stylesheet" href="/styles/userDashboard.css">
+        <link rel="stylesheet" href="/styles/userDashboardSections.css">
+
+        <title>ReciCash</title>
+    </head>
+
+    <body>
+        <main>
+            <!-- ============= MENÚ LATERAL ============== -->
+            <nav class="main-menu">
+                <img src="/assets/img/LOGO-removebg.png" class="logo__main"></img>
+                <img
+                    class="logo"
+                    src="/assets/img/favicon.ico"
+                    alt="" />
+                <ul>
+                    <li class="nav-item active" id="datos">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="ri-user-line nav-icon"></i>
+                            <span class="nav-text">Mis Datos</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" id="agendar">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="ri-macbook-line nav-icon"></i>
+                            <span class="nav-text">Agendar Cita</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" id="citas">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="ri-calendar-line nav-icon"></i>
+                            <span class="nav-text">Mis Citas</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item" id="recompensas">
+                        <b></b>
+                        <b></b>
+                        <a href="#">
+                            <i class="ri-gift-line nav-icon"></i>
+                            <span class="nav-text">Recompensas</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+            <!-- ============= SECCIÓN DE INFO PERSONAL ============== -->
+
+            <section class="datos">
+                <div class="cards__container">
+                    <ul class="card card--papel">
+                        <li class="card__title">Papel/Cartón</li>
+                        <li class="card__value"><i class="ri-line-chart-line"></i> 8 Kg</li>
+                    </ul>
+
+                    <ul class="card card--vidrio">
+                        <li class="card__title">Vidrio</li>
+                        <li class="card__value"><i class="ri-line-chart-line"></i> 8 Kg</li>
+                    </ul>
+
+                    <ul class="card card--plastico">
+                        <li class="card__title">Plástico</li>
+                        <li class="card__value"><i class="ri-line-chart-line"></i> 8 Kg</li>
+                    </ul>
+
+                    <ul class="card card--metales">
+                        <li class="card__title">Metales</li>
+                        <li class="card__value"><i class="ri-line-chart-line"></i> 8 Kg</li>
+                    </ul>
+
+                    <ul class="card card--exit">
+                        <li class="card__home"><i class="ri-home-line"></i> Inicio</li>
+                        <li class="card__logout">
+                            <i class="ri-logout-box-r-line"></i> Cerrar Sesión
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="info__container">
+                    <h3 class="info__title">Información Personal</h3>
+                    <form class="info__form">
+
+                        <div class="info__item">
+                            <label for="nombre" class="info__label">Nombre</label>
+                            <input type="text" id="nombre"  class="info__input" disabled>
+                        </div>
+
+                        <div class="info__item">
+                            <label for="apellidos" class="info__label">Apellidos</label>
+                            <input type="text" id="apellidos" class="info__input" disabled>
+                        </div>
+                        <div class="info__item">
+                            <label for="nacimiento" class="info__label">Fecha de Nacimiento</label>
+                            <input type="date" id="nacimiento" class="info__input" disabled>
+                        </div>
+
+                        <div class="info__item">
+                            <label for="identification" class="info__label">Documento</label>
+                            <input type="text" id="identification" class="info__input" disabled>
+                        </div>
+
+                        <div class="info__item">
+                            <label for="barrio" class="info__label">Barrio</label>
+                            <input type="text" id="barrio" class="info__input" disabled>
+                        </div>
+                        <div class="info__item">
+                            <label for="direccion" class="info__label">Dirección</label>
+                            <input type="text" id="direccion" class="info__input" disabled>
+                        </div>
+                        <div class="info__item">
+                            <label for="nombre" class="info__label">Correo</label>
+                            <input type="text" id="nombre" class="info__input" disabled>
+                        </div>
+
+                        <button type="submit" class="info__submit">Editar</button>
+                        
+                    </form>
+                </div>
+                <div class="chart__container">
+                    
+                </div>
+            </section>
+
+            <section class="agendar hidden">
+                
+            </section>
+
+            <section class="citas hidden">
+                
+            </section>
+
+            <section class="recompensas hidden">
+                
+            </section>
+
+        </main>
+        <script src="/assets/JS/userDashboard.js"></script>
+    </body>
+</html>

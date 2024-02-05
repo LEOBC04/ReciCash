@@ -83,7 +83,7 @@
 }
 
 .form__input:focus + .form__label,
-.form__input:not(:placeholder-shown) + .form__input {
+.form__input:not(:placeholder-shown) + .form__label {
   transform: translateX(0px) translateY(-25px);
   font-size: var(--small-font-size);
   color: var(--primary-100);

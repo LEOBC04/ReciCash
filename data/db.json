@@ -1,0 +1,189 @@
+{
+  "users": [
+    {
+      "id": "6ae7",
+      "email": "lbuitragoc04@gmail.com",
+      "password": "Contraseña123*"
+    },
+    {
+      "id": "7b93",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "efde",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "3a0c",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "81f9",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "88a6",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "8e2b",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "f265",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "f6fc",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "271f",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    },
+    {
+      "id": "9d79",
+      "name": "",
+      "lastName": "",
+      "dateOfBirth": "",
+      "identification": "",
+      "neighborhood": "",
+      "address": "",
+      "email": "",
+      "password": "",
+      "materiales": {
+        "papel": [],
+        "plastico": [],
+        "vidrio": [],
+        "carton": [],
+        "metales": []
+      }
+    }
+  ]
+}

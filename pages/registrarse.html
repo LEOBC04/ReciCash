@@ -51,7 +51,7 @@
                 class="signUp__img" />
 
             <div class="signUp__form">
-                <form class="form">
+                <form class="form" id="registerForm">
                     <h2 class="form__subtitle">Crea una cuenta</h2>
 
                     <div class="form__item">
@@ -134,6 +134,19 @@
 
                     <div class="form__item">
                         <input
+                            type="email"
+                            class="form__input"
+                            id="correo"
+                            placeholder=" " />
+                        <label
+                            for="direccion"
+                            class="form__label"
+                            >Correo electrónico</label
+                        >
+                    </div>
+
+                    <div class="form__item">
+                        <input
                             type="password"
                             class="form__input"
                             id="password"
@@ -160,6 +173,7 @@
 
                     <button
                         class="form__submit"
+                        id="formSubmit"
                         type="submit">
                         Crear Cuenta
                     </button>
@@ -183,5 +197,7 @@
         </section>
 
         <script src="/assets/JS/loader.js"></script>
+        <script src="/assets/JS/registrarse.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     </body>
 </html>

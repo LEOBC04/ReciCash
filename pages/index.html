@@ -14,6 +14,12 @@
         <link
             href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
             rel="stylesheet" />
+
+        <!-- =============== SWIPER =============== -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
         <!-- =============== CSS-INDEX =============== -->
         <link
             rel="stylesheet"
@@ -63,7 +69,7 @@
                     </li>
                     <li class="nav__item">
                         <a
-                            href="#"
+                            href="/pages/education.html"
                             class="nav__link"
                             ><i class="ri-book-open-line"></i> Educación</a
                         >
@@ -104,10 +110,25 @@
 
         <!-- =============== HEADER =============== -->
         <header class="header">
-            <img
-                src="/assets/img/banner-1.png"
-                alt="Banner"
-                class="header__banner" />
+            <!-- Slider main container -->
+            <div class="swiper swiper__header">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="/assets/img/banner-1.png" alt="banner-1"></div>
+                    <div class="swiper-slide"><img src="/assets/img/banner-2.png" alt="banner-2"></div>
+                    <div class="swiper-slide"><img src="/assets/img/banner-3.png" alt="banner-3"></div>
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+            </div>
         </header>
 
         <!-- =============== SECTION - CTA =============== -->
@@ -213,194 +234,202 @@
                 >
             </div>
 
-            <img src="/assets/img/education.png" alt="" class="education__img">
+            <img
+                src="/assets/img/education.png"
+                alt=""
+                class="education__img" />
         </section>
 
         <!-- =============== SECTION - COMENTARIOS =============== -->
         <section class="comments">
-          <div class="comments__titles">
-            <h2 class="comments__subtitle">Historias de Éxito</h2>
-            <p class="comments__paragraph">
-                Esto dicen las personas que usan ReciCash para reciclar:
-            </p>
-        </div>
-
-        <div class="comments__container">
-            <div class="comments__testimonial">
-                <img
-                    src="/assets/img/testimonial_photo_2.jpg"
-                    alt="Profile photo"
-                    class="comments__img" />
-                <h3 class="comments__name">Javier Rodriguez</h3>
-                <p class="comments__opinion">
-                    "La educación ambiental de ReciCash me ha enseñado mucho
-                    sobre el impacto del reciclaje. Ahora me siento más
-                    conectado con el medio ambiente y sé que cada pequeña
-                    acción cuenta."
+            <div class="comments__titles">
+                <h2 class="comments__subtitle">Historias de Éxito</h2>
+                <p class="comments__paragraph">
+                    Esto dicen las personas que usan ReciCash para reciclar:
                 </p>
             </div>
 
-            <div class="comments__testimonial">
-                <img
-                    src="/assets/img/testimonial_photo_3.jpg"
-                    alt="Profile photo"
-                    class="comments__img" />
-                <h3 class="comments__name">Ana Maldonado</h3>
-                <p class="comments__opinion">
-                    "Gracias a ReciCash, he alcanzado mis metas de reciclaje
-                    mucho más rápido de lo que pensé. La plataforma es
-                    intuitiva, y las notificaciones me mantienen al tanto de
-                    cada paso. ¡Increíble!"
-                </p>
+            <div class="comments__container">
+                <div class="comments__testimonial">
+                    <img
+                        src="/assets/img/testimonial_photo_2.jpg"
+                        alt="Profile photo"
+                        class="comments__img" />
+                    <h3 class="comments__name">Javier Rodriguez</h3>
+                    <p class="comments__opinion">
+                        "La educación ambiental de ReciCash me ha enseñado mucho
+                        sobre el impacto del reciclaje. Ahora me siento más
+                        conectado con el medio ambiente y sé que cada pequeña
+                        acción cuenta."
+                    </p>
+                </div>
+
+                <div class="comments__testimonial">
+                    <img
+                        src="/assets/img/testimonial_photo_3.jpg"
+                        alt="Profile photo"
+                        class="comments__img" />
+                    <h3 class="comments__name">Ana Maldonado</h3>
+                    <p class="comments__opinion">
+                        "Gracias a ReciCash, he alcanzado mis metas de reciclaje
+                        mucho más rápido de lo que pensé. La plataforma es
+                        intuitiva, y las notificaciones me mantienen al tanto de
+                        cada paso. ¡Increíble!"
+                    </p>
+                </div>
+                <div class="comments__testimonial">
+                    <img
+                        src="/assets/img/testimonial_photo_1.jpg"
+                        alt="Profile photo"
+                        class="comments__img" />
+                    <h3 class="comments__name">María Gutierrez</h3>
+                    <p class="comments__opinion">
+                        "¡ReciCash ha cambiado por completo mi perspectiva sobre
+                        el reciclaje! Agendar citas es tan fácil, y las
+                        recompensas son un gran incentivo. Estoy emocionada de
+                        contribuir al medio ambiente y ganar al mismo tiempo."
+                    </p>
+                </div>
             </div>
-            <div class="comments__testimonial">
-                <img
-                    src="/assets/img/testimonial_photo_1.jpg"
-                    alt="Profile photo"
-                    class="comments__img" />
-                <h3 class="comments__name">María Gutierrez</h3>
-                <p class="comments__opinion">
-                    "¡ReciCash ha cambiado por completo mi perspectiva sobre
-                    el reciclaje! Agendar citas es tan fácil, y las
-                    recompensas son un gran incentivo. Estoy emocionada de
-                    contribuir al medio ambiente y ganar al mismo tiempo."
-                </p>
-            </div>
-        </div>
         </section>
 
         <!-- =============== FOOTER =============== -->
         <footer class="footer">
-          <div class="footer__container">
-            <div class="footer__social">
-              <h3 class="social__subtitle">Síguenos en nuestras redes:</h3>
+            <div class="footer__container">
+                <div class="footer__social">
+                    <h3 class="social__subtitle">
+                        Síguenos en nuestras redes:
+                    </h3>
 
-              <ul class="social__container">
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-facebook-circle-line"></i
-                      ></a>
-                  </li>
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-twitter-x-line"></i
-                      ></a>
-                  </li>
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-instagram-line"></i
-                      ></a>
-                  </li>
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-linkedin-box-line"></i
-                      ></a>
-                  </li>
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-tiktok-fill"></i
-                      ></a>
-                  </li>
-                  <li class="social__item">
-                      <a
-                          href="#"
-                          class="social__link"
-                          ><i class="ri-youtube-line"></i
-                      ></a>
-                  </li>
-              </ul>
-          </div>
+                    <ul class="social__container">
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-facebook-circle-line"></i
+                            ></a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-twitter-x-line"></i
+                            ></a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-instagram-line"></i
+                            ></a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-linkedin-box-line"></i
+                            ></a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-tiktok-fill"></i
+                            ></a>
+                        </li>
+                        <li class="social__item">
+                            <a
+                                href="#"
+                                class="social__link"
+                                ><i class="ri-youtube-line"></i
+                            ></a>
+                        </li>
+                    </ul>
+                </div>
 
-          <ul class="footer__sections">
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Acerca de Nosotros</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Preguntas Frecuentes (FAQ)</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Términos y Condiciones</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Política de Privacidad</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Centro de Ayuda/Soporte</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Contacto</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Educación</a
-                  >
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Recompensas
-                  </a>
-              </li>
-              <li class="footer__item">
-                  <a
-                      href="#"
-                      class="footer__link"
-                      >Política de Cookies</a
-                  >
-              </li>
-          </ul>
+                <ul class="footer__sections">
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Acerca de Nosotros</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Preguntas Frecuentes (FAQ)</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Términos y Condiciones</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Política de Privacidad</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Centro de Ayuda/Soporte</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Contacto</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Educación</a
+                        >
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Recompensas
+                        </a>
+                    </li>
+                    <li class="footer__item">
+                        <a
+                            href="#"
+                            class="footer__link"
+                            >Política de Cookies</a
+                        >
+                    </li>
+                </ul>
 
-          <div class="footer__info">
-              <p class="footer__rights">
-                  &copy; 2024 ReciCash. Todos los derechos reservados.
-              </p>
-              <p class="footer__location">Medellín - Colombia</p>
-          </div>
+                <div class="footer__info">
+                    <p class="footer__rights">
+                        &copy; 2024 ReciCash. Todos los derechos reservados.
+                    </p>
+                    <p class="footer__location">Medellín - Colombia</p>
+                </div>
 
-          <img
-              src="/assets/img/LOGO-removebg.png"
-              alt="ReciCash Logo"
-              class="footer__logo" />
-          </div>
+                <img
+                    src="/assets/img/LOGO-removebg.png"
+                    alt="ReciCash Logo"
+                    class="footer__logo" />
+            </div>
         </footer>
 
-        <script src="/assets/JS/loader.js"></script>
+        <!-- =============== SCRIPTS =============== -->
+
+        <!-- =============== LOADER AND SLIDER =============== -->
+        <script src="/assets/JS/loader.js" type="module"></script>
     </body>
 </html>

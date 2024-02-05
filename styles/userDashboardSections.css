@@ -1,0 +1,156 @@
+/* =========== DATOS PERSONALES ============ */
+.datos {
+    height: 100%;
+    background: var(--bg-200);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    grid-template-areas:
+        'cards cards cards'
+        'info chart chart'
+        'info chart chart';
+    /* overflow-x: auto; */
+}
+
+.cards__container {
+    grid-area: cards;
+    width: 100%;
+    /* background: slateblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 0;
+}
+
+.card {
+    background: var(--bg-100);
+    border-radius: 5px;
+    max-width: 210px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.card__title {
+    font-size: var(--normal-font-size);
+}
+
+.card__value {
+    font-size: var(--h1-font-size);
+    text-align: end;
+}
+
+.card--papel {
+    background: var(--primary-100);
+    color: var(--bg-200);
+}
+
+.card--vidrio {
+    background: var(--primary-300);
+    color: var(--text-100);
+}
+
+.card--plastico {
+    background: var(--accent-100);
+    color: var(--text-100);
+}
+
+.card--metales {
+    background: var(--accent-200);
+    color: var(--primary-100);
+}
+
+.card--exit {
+    background: var(--bg-200);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 30px;
+    /* padding-left: 30px; */
+}
+
+.card__home,
+.card__logout {
+    font-size: var(--h3-font-size);
+    color: var(--primary-100);
+    transition: 0.3s ease-in-out;
+}
+
+.card__home:hover,
+.card__logout:hover {
+    cursor: pointer;
+    color: var(--accent-200);
+}
+
+/* ============ INFORMACIÓN PERSONAL ============= */
+.info__container {
+    background: var(--bg-200);
+    grid-area: info;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.info__title{
+    text-align: center;
+    font-size: var(--h2-font-size);
+    color: var(--primary-100);
+}
+
+.info__form{
+    /* background: slateblue; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.info__item{
+    display: flex;
+    flex-direction: column;
+}
+
+.info__label{
+    font-size: var(--normal-font-size);
+    color: var(--primary-100);
+}
+
+.info__input{
+    background: none;
+    border-bottom: 1px solid var(--bg-300);
+}
+
+.info__submit {
+    background: var(--accent-200);
+    border-radius: 5px;
+    margin: 0 auto;
+    width: 60%;
+    padding: 5px 0;
+}
+
+.chart__container {
+    grid-area: chart;
+    width: 100%;
+    background: lightcoral;
+}
+
+.agendar {
+    background: steelblue;
+}
+
+.citas {
+    background: pink;
+}
+
+.recompensas {
+    background: coral;
+}
+
+.hidden {
+    display: none;
+}
