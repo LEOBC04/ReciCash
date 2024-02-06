@@ -1,189 +1,122 @@
 {
-  "users": [
-    {
-      "id": "6ae7",
-      "email": "lbuitragoc04@gmail.com",
-      "password": "Contraseña123*"
-    },
-    {
-      "id": "7b93",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "efde",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "3a0c",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "81f9",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "88a6",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "8e2b",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "f265",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "f6fc",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "271f",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    },
-    {
-      "id": "9d79",
-      "name": "",
-      "lastName": "",
-      "dateOfBirth": "",
-      "identification": "",
-      "neighborhood": "",
-      "address": "",
-      "email": "",
-      "password": "",
-      "materiales": {
-        "papel": [],
-        "plastico": [],
-        "vidrio": [],
-        "carton": [],
-        "metales": []
-      }
-    }
-  ]
+    "users": [
+        {
+            "id": "6ae7",
+            "name": "Leandro",
+            "lastName": "Castaño",
+            "address": "Calle 1 # 1 A 111",
+            "dateOfBirth": "04-01-1996",
+            "identification": "1039466048",
+            "neighborhood": "Aranjuez",
+            "email": "lbuitragoc04@gmail.com",
+            "password": "Contraseña123*",
+            "citas": [],
+            "materiales": {
+                "papel": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 1
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 4
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ],
+                "plastico": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 1
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 4
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ],
+                "vidrio": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 1
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 4
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ],
+                "metales": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 1
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 4
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ]
+            }
+        }
+    ]
 }
