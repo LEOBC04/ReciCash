@@ -157,6 +157,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     spinner.classList.remove('spinner__disabled')
 
                     // Se realiza autenticación
+                    localStorage.setItem('user', loginEmail.value)
                     localStorage.setItem("isAuthenticated","true")
 
                     // Finalmente redireccionamos
@@ -190,4 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
     function limpiarInputs() {
         loginForm.reset()
     }
+
+    
 })

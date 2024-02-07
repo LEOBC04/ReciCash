@@ -1,8 +1,6 @@
 // SELECTORES
-
-const navItems = document.querySelectorAll('.nav-item')
-const sections = document.querySelectorAll('section')
 // nav items
+const navItems = document.querySelectorAll('.nav-item')
 const navDatos = document.getElementById('datos')
 const navAgendar = document.getElementById('agendar')
 const navCitas = document.getElementById('citas')
@@ -12,6 +10,8 @@ const sectionDatos = document.querySelector('.datos')
 const sectionAgendar = document.querySelector('.agendar')
 const sectionCitas = document.querySelector('.citas')
 const sectionRecompensas = document.querySelector('.recompensas')
+// Cerrar session
+const cardLogout = document.getElementById('cardLogout')
 
 document.addEventListener('DOMContentLoaded', () => {
     // Identificar la pestaña de la nav activa
@@ -25,10 +25,12 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     })
 
+    // EVENTOS
     navDatos.addEventListener('click', validarSection)
     navAgendar.addEventListener('click', validarSection)
     navCitas.addEventListener('click', validarSection)
     navRecompensas.addEventListener('click', validarSection)
+    cardLogout.addEventListener('click',logOut)
 
     function validarSection(e) {
         const parentElement = e.target.parentElement.parentElement
@@ -72,5 +74,14 @@ document.addEventListener('DOMContentLoaded', () => {
             sectionCitas.classList.add('hidden')
           }
         }
+    }
+
+    function logOut() {
+      // Eliminamos elementos del local storage
+      localStorage.removeItem('id')
+      localStorage.removeItem('user')
+      localStorage.removeItem('isAuthenticated')
+
+      window.location.href = 'index.html'
     }
 })

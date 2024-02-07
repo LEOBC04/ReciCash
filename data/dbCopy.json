@@ -1,56 +1,122 @@
 {
-  "users": [
-      {
-          "id": "6ae7",
-          "name": "Leo",
-          "lastName": "Castaño",
-          "dateOfBirth": "04-01-1996",
-          "identification": "1039466048",
-          "neighborhood": "Aranjuez",
-          "email": "lbuitragoc04@gmail.com",
-          "password": "Contraseña123*",
-          "materiales": {
-              "papel": [
-                  { "fecha": "01-01-2023", "cantidad": 1 },
-                  { "fecha": "01-02-2023", "cantidad": 2 },
-                  { "fecha": "01-03-2023", "cantidad": 3 },
-                  { "fecha": "01-04-2023", "cantidad": 4 },
-                  { "fecha": "01-05-2023", "cantidad": 5 },
-                  { "fecha": "01-06-2023", "cantidad": 6 }
-              ],
-              "plastico": [
-                  { "fecha": "01-01-2023", "cantidad": 1 },
-                  { "fecha": "01-02-2023", "cantidad": 2 },
-                  { "fecha": "01-03-2023", "cantidad": 3 },
-                  { "fecha": "01-04-2023", "cantidad": 4 },
-                  { "fecha": "01-05-2023", "cantidad": 5 },
-                  { "fecha": "01-06-2023", "cantidad": 6 }
-              ],
-              "vidrio": [
-                  { "fecha": "01-01-2023", "cantidad": 1 },
-                  { "fecha": "01-02-2023", "cantidad": 2 },
-                  { "fecha": "01-03-2023", "cantidad": 3 },
-                  { "fecha": "01-04-2023", "cantidad": 4 },
-                  { "fecha": "01-05-2023", "cantidad": 5 },
-                  { "fecha": "01-06-2023", "cantidad": 6 }
-              ],
-              "carton": [
-                  { "fecha": "01-01-2023", "cantidad": 1 },
-                  { "fecha": "01-02-2023", "cantidad": 2 },
-                  { "fecha": "01-03-2023", "cantidad": 3 },
-                  { "fecha": "01-04-2023", "cantidad": 4 },
-                  { "fecha": "01-05-2023", "cantidad": 5 },
-                  { "fecha": "01-06-2023", "cantidad": 6 }
-              ],
-              "metales": [
-                  { "fecha": "01-01-2023", "cantidad": 1 },
-                  { "fecha": "01-02-2023", "cantidad": 2 },
-                  { "fecha": "01-03-2023", "cantidad": 3 },
-                  { "fecha": "01-04-2023", "cantidad": 4 },
-                  { "fecha": "01-05-2023", "cantidad": 5 },
-                  { "fecha": "01-06-2023", "cantidad": 6 }
-              ]
-          }
-      }
-  ]
+    "users": [
+        {
+            "id": "6ae7",
+            "name": "Leo",
+            "lastName": "Castaño",
+            "address": "Calle 1 # 1 A 111",
+            "dateOfBirth": "04-01-1996",
+            "identification": "1039466048",
+            "neighborhood": "Aranjuez",
+            "email": "lbuitragoc04@gmail.com",
+            "password": "Contraseña123*",
+            "citas": [],
+            "materiales": {
+                "papel": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 1.3
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 4.5
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3.8
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 2.7
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ],
+                "plastico": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 3.1
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2.3
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 4.5
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 3.8
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 5
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 1.8
+                    }
+                ],
+                "vidrio": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 4.7
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2.2
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 3.8
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 0.5
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 7
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 4.3
+                    }
+                ],
+                "metales": [
+                    {
+                        "fecha": "01-01-2023",
+                        "cantidad": 3.6
+                    },
+                    {
+                        "fecha": "01-02-2023",
+                        "cantidad": 2.1
+                    },
+                    {
+                        "fecha": "01-03-2023",
+                        "cantidad": 1.2
+                    },
+                    {
+                        "fecha": "01-04-2023",
+                        "cantidad": 4.6
+                    },
+                    {
+                        "fecha": "01-05-2023",
+                        "cantidad": 2.7
+                    },
+                    {
+                        "fecha": "01-06-2023",
+                        "cantidad": 6
+                    }
+                ]
+            }
+        }
+    ]
 }

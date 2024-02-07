@@ -15,15 +15,14 @@
             href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
             rel="stylesheet" />
 
-        <!-- =============== SWIPER =============== -->
-        <link
-            rel="stylesheet"
-            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
         <!-- =============== CSS-INDEX =============== -->
         <link
             rel="stylesheet"
             href="/styles/styles.css" />
+        <!-- =============== SWIPER =============== -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
         <title>ReciCash</title>
     </head>
@@ -59,7 +58,15 @@
                     </a>
                 </div>
 
-                <ul class="nav__menu">
+                <button
+                    class="nav__toggle"
+                    id="navToggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <ul
+                    class="nav__menu"
+                    id="navMenu">
                     <li class="nav__item">
                         <a
                             href="#"
@@ -88,36 +95,49 @@
                             ><i class="ri-message-3-line"></i> Contacto</a
                         >
                     </li>
-                </ul>
 
-                <div class="nav__buttons">
-                    <a
-                        href="/pages/iniciarSesion.html"
-                        class="nav__button"
-                        >Iniciar Sesión</a
-                    >
-                    <a
-                        href="/pages/registrarse.html"
-                        class="nav__button"
-                        >Regístrate</a
-                    >
-                    <button class="nav__button--language">
-                        <i class="ri-earth-line"></i>
-                    </button>
-                </div>
+                    <li>
+                        <div class="nav__buttons">
+                            <a
+                                href="/pages/iniciarSesion.html"
+                                class="nav__button"
+                                id="logInLogOut"
+                                >Iniciar Sesión</a
+                            >
+                            <a
+                                href="/pages/registrarse.html"
+                                class="nav__button"
+                                id="registerProfile"
+                                >Regístrate</a
+                            >
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
 
         <!-- =============== HEADER =============== -->
         <header class="header">
             <!-- Slider main container -->
-            <div class="swiper swiper__header">
+            <div class="swiper swiperHeader">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->
-                    <div class="swiper-slide"><img src="/assets/img/banner-1.png" alt="banner-1"></div>
-                    <div class="swiper-slide"><img src="/assets/img/banner-2.png" alt="banner-2"></div>
-                    <div class="swiper-slide"><img src="/assets/img/banner-3.png" alt="banner-3"></div>
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/banner-1.png"
+                            alt="banner-1" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/banner-2.png"
+                            alt="banner-2" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img
+                            src="/assets/img/banner-3.png"
+                            alt="banner-3" />
+                    </div>
                 </div>
                 <!-- If we need pagination -->
                 <div class="swiper-pagination"></div>
@@ -248,48 +268,84 @@
                     Esto dicen las personas que usan ReciCash para reciclar:
                 </p>
             </div>
+            <!-- Slider main container -->
+            <div class="swiper swiperComments">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="comments__testimonial">
+                            <img
+                                src="/assets/img/testimonial_photo_2.jpg"
+                                alt="Profile photo"
+                                class="comments__img" />
+                            <h3 class="comments__name">Javier Rodriguez</h3>
+                            <p class="comments__opinion">
+                                "La educación ambiental de ReciCash me ha
+                                enseñado mucho sobre el impacto del reciclaje.
+                                Ahora me siento más conectado con el medio
+                                ambiente y sé que cada pequeña acción cuenta."
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__testimonial">
+                            <img
+                                src="/assets/img/testimonial_photo_3.jpg"
+                                alt="Profile photo"
+                                class="comments__img" />
+                            <h3 class="comments__name">Ana Maldonado</h3>
+                            <p class="comments__opinion">
+                                "Gracias a ReciCash, he alcanzado mis metas de
+                                reciclaje mucho más rápido de lo que pensé. La
+                                plataforma es intuitiva, y las notificaciones me
+                                mantienen al tanto de cada paso. ¡Increíble!"
+                            </p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="comments__testimonial">
+                            <img
+                                src="/assets/img/testimonial_photo_1.jpg"
+                                alt="Profile photo"
+                                class="comments__img" />
+                            <h3 class="comments__name">María Gutierrez</h3>
+                            <p class="comments__opinion">
+                                "¡ReciCash ha cambiado por completo mi
+                                perspectiva sobre el reciclaje! Agendar citas es
+                                tan fácil, y las recompensas son un gran
+                                incentivo. Estoy emocionada de contribuir al
+                                medio ambiente y ganar al mismo tiempo."
+                            </p>
+                        </div>
+                    </div>
 
-            <div class="comments__container">
-                <div class="comments__testimonial">
-                    <img
-                        src="/assets/img/testimonial_photo_2.jpg"
-                        alt="Profile photo"
-                        class="comments__img" />
-                    <h3 class="comments__name">Javier Rodriguez</h3>
-                    <p class="comments__opinion">
-                        "La educación ambiental de ReciCash me ha enseñado mucho
-                        sobre el impacto del reciclaje. Ahora me siento más
-                        conectado con el medio ambiente y sé que cada pequeña
-                        acción cuenta."
-                    </p>
+                    <div class="swiper-slide">
+                        <div class="comments__testimonial">
+                            <img
+                                src="/assets/img/testimonial_photo_1.jpg"
+                                alt="Profile photo"
+                                class="comments__img" />
+                            <h3 class="comments__name">María Gutierrez</h3>
+                            <p class="comments__opinion">
+                                "¡ReciCash ha cambiado por completo mi
+                                perspectiva sobre el reciclaje! Agendar citas es
+                                tan fácil, y las recompensas son un gran
+                                incentivo. Estoy emocionada de contribuir al
+                                medio ambiente y ganar al mismo tiempo."
+                            </p>
+                        </div>
+                    </div>
                 </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
 
-                <div class="comments__testimonial">
-                    <img
-                        src="/assets/img/testimonial_photo_3.jpg"
-                        alt="Profile photo"
-                        class="comments__img" />
-                    <h3 class="comments__name">Ana Maldonado</h3>
-                    <p class="comments__opinion">
-                        "Gracias a ReciCash, he alcanzado mis metas de reciclaje
-                        mucho más rápido de lo que pensé. La plataforma es
-                        intuitiva, y las notificaciones me mantienen al tanto de
-                        cada paso. ¡Increíble!"
-                    </p>
-                </div>
-                <div class="comments__testimonial">
-                    <img
-                        src="/assets/img/testimonial_photo_1.jpg"
-                        alt="Profile photo"
-                        class="comments__img" />
-                    <h3 class="comments__name">María Gutierrez</h3>
-                    <p class="comments__opinion">
-                        "¡ReciCash ha cambiado por completo mi perspectiva sobre
-                        el reciclaje! Agendar citas es tan fácil, y las
-                        recompensas son un gran incentivo. Estoy emocionada de
-                        contribuir al medio ambiente y ganar al mismo tiempo."
-                    </p>
-                </div>
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
             </div>
         </section>
 
@@ -430,6 +486,10 @@
         <!-- =============== SCRIPTS =============== -->
 
         <!-- =============== LOADER AND SLIDER =============== -->
-        <script src="/assets/JS/loader.js" type="module"></script>
+        <script
+            src="/assets/JS/loader.js"
+            type="module"></script>
+        <!-- =============== HOME =============== -->
+        <script src="/assets/JS/home.js"></script>    
     </body>
 </html>

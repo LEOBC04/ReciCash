@@ -47,8 +47,6 @@ document.addEventListener('DOMContentLoaded', function () {
     // Evento para el envío del formulario
     formRegister.addEventListener('submit', registrarse)
 
-    
-
     // Cuando carge el documento limpiar inputas
     limpiarInputs()
 
@@ -58,14 +56,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     async function registrarse(e) {
         e.preventDefault()
-        usuario.name = registerName
-        usuario.lastName = registerLastName
-        usuario.dateOfBirth = registerBirth
-        usuario.identification = registerDocument
-        usuario.neighborhood = registerNeighborhood
-        usuario.address = registerAddress
-        usuario.email = registerEmail
-        usuario.password = registerPassword
+        usuario.name = registerName.value
+        usuario.lastName = registerLastName.value
+        usuario.dateOfBirth = registerBirth.value
+        usuario.identification = registerDocument.value
+        usuario.neighborhood = registerNeighborhood.value
+        usuario.address = registerAddress.value
+        usuario.email = registerEmail.value
+        usuario.password = registerPassword.value
 
         try {
             const response = await fetch(URLusers, {
@@ -80,8 +78,10 @@ document.addEventListener('DOMContentLoaded', function () {
                 throw new Error(`${response.status}, ${response.statusText}`)
             } else {
                 const data = await response.json()
-                console.log(data);
-                showSweetAlert('Cuenta creada exitosamente')
+                console.log(data)
+                showSweetAlert('Cuenta creada exitosamente').then(() => {
+                    window.location.href = 'iniciarSesion.html'
+                })
             }
         } catch (error) {
             console.log(error)
@@ -93,22 +93,18 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     function showSweetAlert(msg) {
-
-        // eslint-disable-next-line no-undef
-        Swal.fire({
-          position: "center",
-          icon: "success",
-          title: msg,
-          showConfirmButton: false,
-          timer: 10000,
-          allowOutsideClick: false,
-          allowEscapeKey: false,
-          timerProgressBar: true,
-        });
-
-        // Redireccionamos al inicio de sesión
-        // setTimeout(() => {
-        //     window.location.href = 'iniciarSesion.html'
-        // }, 5000)
+        return new Promise(resolve => {
+            // eslint-disable-next-line no-undef
+            Swal.fire({
+                position: 'center',
+                icon: 'success',
+                title: msg,
+                showConfirmButton: false,
+                timer: 10000,
+                allowOutsideClick: false,
+                allowEscapeKey: false,
+                timerProgressBar: true,
+            }).then(() => resolve())
+        })
     }
 })

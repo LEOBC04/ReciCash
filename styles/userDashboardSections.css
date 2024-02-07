@@ -1,5 +1,6 @@
 /* =========== DATOS PERSONALES ============ */
 .datos {
+    min-height: 100vh;
     height: 100%;
     background: var(--bg-200);
     display: grid;
@@ -69,7 +70,7 @@
     flex-direction: column;
     justify-content: center;
     margin-left: 30px;
-    /* padding-left: 30px; */
+    border: none;
 }
 
 .card__home,
@@ -85,6 +86,10 @@
     color: var(--accent-200);
 }
 
+.card__home--button{
+    background: none;
+}
+
 /* ============ INFORMACIÓN PERSONAL ============= */
 .info__container {
     background: var(--bg-200);
@@ -96,13 +101,13 @@
     gap: 30px;
 }
 
-.info__title{
+.info__title {
     text-align: center;
     font-size: var(--h2-font-size);
     color: var(--primary-100);
 }
 
-.info__form{
+.info__form {
     /* background: slateblue; */
     width: 90%;
     display: flex;
@@ -110,47 +115,156 @@
     gap: 5px;
 }
 
-.info__item{
+.info__item {
     display: flex;
     flex-direction: column;
 }
 
-.info__label{
+.info__label {
     font-size: var(--normal-font-size);
     color: var(--primary-100);
 }
 
-.info__input{
+.info__input {
     background: none;
     border-bottom: 1px solid var(--bg-300);
 }
 
-.info__submit {
+.info__submit,
+.info__edit {
     background: var(--accent-200);
     border-radius: 5px;
-    margin: 0 auto;
+    margin: 15px auto;
     width: 60%;
     padding: 5px 0;
+}
+
+.info__submit--hidden{
+    display: none ;
+}
+
+.info__submit:hover,
+.info__edit:hover {
+    background: var(--accent-100);
+    cursor: pointer;
 }
 
 .chart__container {
     grid-area: chart;
     width: 100%;
-    background: lightcoral;
+    /* background: lightcoral; */
 }
+
+/* ============ AGENDAR CITA ============= */
 
 .agendar {
-    background: steelblue;
+    background: var(--bg-200);
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.agendar__container{
+    background: var(--bg-100);
+    box-shadow: 0 0 5px 5px var(--bg-300);
+    border-radius: 5px;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.agendar__title{
+    font-size: var(--h1-font-size);
+    text-align: center;
+    color: var(--primary-100);
+}
+
+.agendar__form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.agendar__item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.agendar__label {
+    color: var(--primary-100);
+    font-size: var(--regular-font-size);
+}
+
+.agendar__input {
+    background: var(--bg-200);
+    padding: 8px 0;
+}
+
+.agendar__select {
+    padding: 5px;
+}
+
+.agendar__submit {
+    padding: 10px 0;
+    border-radius: 5px;
+    font-size: var(--regular-font-size);
+    color: var(--primary-100);
+    background: var(--accent-200);
+}
+
+/* ============ MIS CITAS ============= */
+
 
 .citas {
-    background: pink;
+    background: var(--bg-200);
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
 }
 
+.citas__title{
+    font-size: var(--h1-font-size);
+    color: var(--primary-100);
+    text-align: center;
+    margin-top: 100px;
+}
+
+.table {
+    max-width: 900px;
+}
+
+/* ============ RECOMPENSAS ============= */
+
 .recompensas {
-    background: coral;
+    background: var(--bg-200);
+    min-height: 100vh;
+    height: 100%;
 }
 
 .hidden {
     display: none;
+}
+
+/* =================== RESPONSIVE ================= */
+
+@media (max-width: 1200px) {
+    .datos {
+        /* max-height: 100vh; */
+        overflow-y: scroll;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+            'cards cards'
+            'info info'
+            'info info'
+            'chart chart';
+        /* overflow-x: auto; */
+    }
 }

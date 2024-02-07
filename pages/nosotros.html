@@ -59,7 +59,11 @@
                     </a>
                 </div>
 
-                <ul class="nav__menu">
+                <button class="nav__toggle" id="navToggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <ul class="nav__menu" id="navMenu">
                     <li class="nav__item">
                         <a
                             href="/pages/index.html"
@@ -88,23 +92,22 @@
                             ><i class="ri-message-3-line"></i> Contacto</a
                         >
                     </li>
-                </ul>
 
-                <div class="nav__buttons">
-                    <a
-                        href="/pages/iniciarSesion.html"
-                        class="nav__button"
-                        >Iniciar Sesión</a
-                    >
-                    <a
-                        href="/pages/registrarse.html"
-                        class="nav__button"
-                        >Regístrate</a
-                    >
-                    <button class="nav__button--language">
-                        <i class="ri-earth-line"></i>
-                    </button>
-                </div>
+                    <li>
+                        <div class="nav__buttons">
+                            <a
+                                href="/pages/iniciarSesion.html"
+                                class="nav__button"
+                                >Iniciar Sesión</a
+                            >
+                            <a
+                                href="/pages/registrarse.html"
+                                class="nav__button"
+                                >Regístrate</a
+                            >
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -316,6 +319,6 @@
             </div>
           </footer>
 
-        <script src="/assets/JS/loader.js"></script>
+        <script src="/assets/JS/loader.js" type="module"></script>
     </body>
 </html>

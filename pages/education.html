@@ -60,7 +60,11 @@
                     </a>
                 </div>
 
-                <ul class="nav__menu">
+                <button class="nav__toggle" id="navToggle">
+                    <i class="ri-menu-line"></i>
+                </button>
+
+                <ul class="nav__menu" id="navMenu">
                     <li class="nav__item">
                         <a
                             href="/pages/index.html"
@@ -70,7 +74,7 @@
                     </li>
                     <li class="nav__item">
                         <a
-                            href="#"
+                            href="/pages/education.html"
                             class="nav__link"
                             ><i class="ri-book-open-line"></i> Educación</a
                         >
@@ -89,23 +93,22 @@
                             ><i class="ri-message-3-line"></i> Contacto</a
                         >
                     </li>
-                </ul>
 
-                <div class="nav__buttons">
-                    <a
-                        href="/pages/iniciarSesion.html"
-                        class="nav__button"
-                        >Iniciar Sesión</a
-                    >
-                    <a
-                        href="/pages/registrarse.html"
-                        class="nav__button"
-                        >Regístrate</a
-                    >
-                    <button class="nav__button--language">
-                        <i class="ri-earth-line"></i>
-                    </button>
-                </div>
+                    <li>
+                        <div class="nav__buttons">
+                            <a
+                                href="/pages/iniciarSesion.html"
+                                class="nav__button"
+                                >Iniciar Sesión</a
+                            >
+                            <a
+                                href="/pages/registrarse.html"
+                                class="nav__button"
+                                >Regístrate</a
+                            >
+                        </div>
+                    </li>
+                </ul>
             </div>
         </nav>
 
@@ -187,47 +190,109 @@
                 </p>
                 <img
                     src="https://www.bbva.com/wp-content/uploads/2021/06/motivos-para-reciclar-sostenibilidad-788x1536.png"
-                    alt="infografia" / class="article__img">
+                    alt="infografia"
+                    class="article__img" />
             </article>
 
             <article class="article">
-                <h2 class="article__title" id="materiales-que-se-reciclan">¿Qué materiales se pueden reciclar?</h2> 
-                <p class="article__paragraph">La siguiente es una lista de los materiales que se pueden reciclar y los encontramos en todo lo que usamos o consumimos a diario.
-                  <img class="article__img" src="https://media.istockphoto.com/id/1224868124/es/foto/reciclaje-gesti%C3%B3n-de-residuos.jpg?s=612x612&w=0&k=20&c=c0Ixeltgcj8BqIU2TrhSv8uOlJcoIRyyvvTUpuW1tgw=" alt="">
-                  <ul class="article__list">
-                    <li> Plástico</li>
-                    <li> Vidrio</li>
-                    <li> Metales</li>
-                    <li> Papel y Cartón</li>
-                    <li> Desechos orgánicos</li>
-                  </ul>
+                <h2
+                    class="article__title"
+                    id="materiales-que-se-reciclan">
+                    ¿Qué materiales se pueden reciclar?
+                </h2>
+                <p class="article__paragraph">
+                    La siguiente es una lista de los materiales que se pueden
+                    reciclar y los encontramos en todo lo que usamos o
+                    consumimos a diario.
                 </p>
-                <div class="container-inf">
-                  <h3 class="article__subtitle">El plástico</h3>
-                  <p class="article__definition">Cada año se producen más de 430 millones de toneladas de plásticos en el mundo, como por ejemplo son los envases de alimentos, utensilios de cocina, muebles, accesorios para ropa, embalaje de productos, ropa, materiales de cama, botellas de agua y zumos, botellas de detergente, tuberías,… entre otros que se utilizan en artículos de primera necesidad que forman parte del día a día de cada persona y empresas.</p>
-                  <h3 class="article__subtitle">El Vidrio</h3>
-                  <p class="article__definition">El vidrio es un material inerte utilizado sobre todo en los productos de alimentos, perfumería, vinos, cervezas, de laboratorios, entre otros. Millones de botellas de vidrios son recicladas gracias a las características de su material de arena de playa y silicatos que pueden ser fundidos para crear nuevos productos sin tener que agregar otros compuestos químicos. El vidrio es un material que puede reciclar totalmente y de manera continua.
-                  </p>
-                  <h3 class="article__subtitle">Los Metales.</h3>
-                  <p class="article__definition">El hierro es el metal más usado en la industria, constituye el 95% de la producción mundial de metal. El hierro en su forma pura prácticamente no tiene aplicación, es en forma de acero donde más aplicaciones tiene.
-                  <br>
-                  Seguido tenemos el aluminio, el cobre, el plomo y el zinc que constituyen una parte importante en los productos de primera necesidad.  
-                  </p>
-                  <h3 class="article__subtitle">Papel y Cartón</h3>
-                  <p class="article__definition">Según investigaciones el papel y el cartón es una de las fracciones de residuos más numerosa, y puede estar formado por cartón, cajas, periódicos, revistas, servilletas, papel higiénico, papel decorativo, papel para productos de embalar, papel para manualidades, entre otros.
-                  El papel y cartón tiene la ventaja como recurso de reciclarse hasta 7 veces.
-                  Reciclar el papel y cartón salva millones de árboles de ser talados, además de disminuir la contaminación del agua y del aire.
-                  </p>
-                  <h3 class="article__subtitle">Desperdicios orgánicos.</h3>
-                  <p class="article__definition">Los desechos orgánicos son los producidos por la actividad de la cocina y las actividades de preparación de los alimentos, como por ejemplo las pieles de vegetales y frutas, restos de alimentos así como los desperdicios de los jardines, como lo son restos de ramas, césped, raíces, flores y tallos, entre otros.
-                  Estos desperdicios orgánicos pueden ser reciclados por un tratamiento de compostaje que finalmente producirá un abono natural para integrarse a la tierra, que proporcionan nutrientes para cultivos, siembras agrícolas u ornamentales.
-                  </p>
+                <img
+                    class="article__img"
+                    src="https://media.istockphoto.com/id/1224868124/es/foto/reciclaje-gesti%C3%B3n-de-residuos.jpg?s=612x612&w=0&k=20&c=c0Ixeltgcj8BqIU2TrhSv8uOlJcoIRyyvvTUpuW1tgw="
+                    alt="" />
+                <ul class="article__list">
+                    <li>Plástico</li>
+                    <li>Vidrio</li>
+                    <li>Metales</li>
+                    <li>Papel y Cartón</li>
+                    <li>Desechos orgánicos</li>
+                </ul>
+                <h3 class="article__subtitle">El plástico</h3>
+                <p class="article__definition">
+                    Cada año se producen más de 430 millones de toneladas de
+                    plásticos en el mundo, como por ejemplo son los envases de
+                    alimentos, utensilios de cocina, muebles, accesorios para
+                    ropa, embalaje de productos, ropa, materiales de cama,
+                    botellas de agua y zumos, botellas de detergente, tuberías,…
+                    entre otros que se utilizan en artículos de primera
+                    necesidad que forman parte del día a día de cada persona y
+                    empresas.
+                </p>
+                <h3 class="article__subtitle">El Vidrio</h3>
+                <p class="article__definition">
+                    El vidrio es un material inerte utilizado sobre todo en los
+                    productos de alimentos, perfumería, vinos, cervezas, de
+                    laboratorios, entre otros. Millones de botellas de vidrios
+                    son recicladas gracias a las características de su material
+                    de arena de playa y silicatos que pueden ser fundidos para
+                    crear nuevos productos sin tener que agregar otros
+                    compuestos químicos. El vidrio es un material que puede
+                    reciclar totalmente y de manera continua.
+                </p>
+                <h3 class="article__subtitle">Los Metales.</h3>
+                <p class="article__definition">
+                    El hierro es el metal más usado en la industria, constituye
+                    el 95% de la producción mundial de metal. El hierro en su
+                    forma pura prácticamente no tiene aplicación, es en forma de
+                    acero donde más aplicaciones tiene.
+                    <br />
+                    Seguido tenemos el aluminio, el cobre, el plomo y el zinc
+                    que constituyen una parte importante en los productos de
+                    primera necesidad.
+                </p>
+                <h3 class="article__subtitle">Papel y Cartón</h3>
+                <p class="article__definition">
+                    Según investigaciones el papel y el cartón es una de las
+                    fracciones de residuos más numerosa, y puede estar formado
+                    por cartón, cajas, periódicos, revistas, servilletas, papel
+                    higiénico, papel decorativo, papel para productos de
+                    embalar, papel para manualidades, entre otros. El papel y
+                    cartón tiene la ventaja como recurso de reciclarse hasta 7
+                    veces. Reciclar el papel y cartón salva millones de árboles
+                    de ser talados, además de disminuir la contaminación del
+                    agua y del aire.
+                </p>
+                <h3 class="article__subtitle">Desperdicios orgánicos.</h3>
+                <p class="article__definition">
+                    Los desechos orgánicos son los producidos por la actividad
+                    de la cocina y las actividades de preparación de los
+                    alimentos, como por ejemplo las pieles de vegetales y
+                    frutas, restos de alimentos así como los desperdicios de los
+                    jardines, como lo son restos de ramas, césped, raíces,
+                    flores y tallos, entre otros. Estos desperdicios orgánicos
+                    pueden ser reciclados por un tratamiento de compostaje que
+                    finalmente producirá un abono natural para integrarse a la
+                    tierra, que proporcionan nutrientes para cultivos, siembras
+                    agrícolas u ornamentales.
+                </p>
             </article>
 
             <article class="article">
-                <h2 class="article__title" id="como-reciclar">¿Como reciclar?</h2>
-                <img class="article__img article__img--final" src="https://d20ohkaloyme4g.cloudfront.net/img/document_thumbnails/6ef26f10d8f9e94d3aff9d31d8f14f24/thumb_1200_3000.png" alt="infografia">
-                <p class="article__paragraph">Colombia genera unas 12 millones de toneladas de residuos sólidos al año y solo recicla el 17 %, este porcentaje puede aumentar si desde cada uno de nuestros hogares nos comprometemos a ayudar separando los residuos como vimos en el apartado anterior.
+                <h2
+                    class="article__title"
+                    id="como-reciclar">
+                    ¿Como reciclar?
+                </h2>
+                <img
+                    class="article__img article__img--final"
+                    src="https://d20ohkaloyme4g.cloudfront.net/img/document_thumbnails/6ef26f10d8f9e94d3aff9d31d8f14f24/thumb_1200_3000.png"
+                    alt="infografia" />
+                <p class="article__paragraph">
+                    Colombia genera unas 12 millones de toneladas de residuos
+                    sólidos al año y solo recicla el 17 %, este porcentaje puede
+                    aumentar si desde cada uno de nuestros hogares nos
+                    comprometemos a ayudar separando los residuos como vimos en
+                    el apartado anterior.
+                </p>
             </article>
         </section>
 
@@ -365,6 +430,8 @@
             </div>
         </footer>
 
-        <script src="/assets/JS/loader.js"></script>
+        <script
+        src="/assets/JS/loader.js"
+        type="module"></script>
     </body>
 </html>
